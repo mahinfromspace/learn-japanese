@@ -1,4 +1,4 @@
-import { Archive, CalendarRange, Check, Download, FileUp, Pencil, Plus, RotateCcw, Save, Search, ShieldCheck, Trash2 } from 'lucide-react';
+import { Archive, CalendarRange, Check, Cloud, CloudOff, Download, FileUp, Pencil, Plus, RefreshCw, RotateCcw, Save, Search, ShieldCheck, Trash2 } from 'lucide-react';
 import { useMemo, useRef, useState } from 'react';
 import { useStudy } from '../state/StudyContext';
 
@@ -8,6 +8,7 @@ export function SettingsPage() {
   const {
     progress, content, updateSettings, editContent, addContent, archiveContent, resetItems,
     resetAll, resetTestHistory, importProgress, replaceOfficialKanji, setCompletedKanjiDays,
+    cloudStatus, syncNow,
   } = useStudy();
   const [area, setArea] = useState('kanji');
   const [selectedId, setSelectedId] = useState(content.kanji[0]?.id || '');
@@ -79,6 +80,20 @@ export function SettingsPage() {
     <div className="page settings-page">
       <header className="page-heading"><p className="eyebrow">SETTINGS + DATA STUDIO</p><h1>Your app, your rules.</h1><p>Adjust the pace, repair progress, and edit every catalog as structured local data.</p></header>
       {message && <div className="toast" role="status">{message}</div>}
+      <section className={`section-block cloud-sync-card ${cloudStatus.state}`}>
+        <div className="section-heading">
+          <div><p className="eyebrow">CLOUD SYNC</p><h2>Your Supabase progress</h2></div>
+          {cloudStatus.state === 'error' ? <CloudOff /> : <Cloud />}
+        </div>
+        <div className="cloud-sync-state">
+          <strong>{cloudStatus.state === 'synced' ? 'Everything is saved' : cloudStatus.state === 'syncing' ? 'Saving changes…' : cloudStatus.state === 'loading' ? 'Loading your cloud data…' : cloudStatus.state === 'error' ? 'Cloud save failed' : cloudStatus.state === 'local' ? 'This profile is local only' : 'Ready to save'}</strong>
+          <p>{cloudStatus.error || (cloudStatus.lastSyncedAt ? `Last saved ${new Date(cloudStatus.lastSyncedAt).toLocaleString()}` : 'Future changes automatically save to Supabase while you are logged in.')}</p>
+        </div>
+        <button className="button secondary" type="button" disabled={cloudStatus.state === 'loading' || cloudStatus.state === 'syncing'} onClick={async () => {
+          const result = await syncNow();
+          notify(result.ok ? 'Progress saved to Supabase.' : `Cloud save failed: ${result.error?.message || 'Unknown error'}`);
+        }}><RefreshCw /> Save to cloud now</button>
+      </section>
       <section className="section-block"><div className="section-heading"><div><p className="eyebrow">DAILY PACE</p><h2>Learning limits</h2></div><ShieldCheck /></div><div className="setting-grid"><NumberSetting label="Kanji per day" value={progress.settings.kanjiDaily} min={1} max={20} onChange={(kanjiDaily) => updateSettings({ kanjiDaily })} /><NumberSetting label="Vocabulary per day" value={progress.settings.vocabularyDaily} min={5} max={60} onChange={(vocabularyDaily) => updateSettings({ vocabularyDaily })} /><NumberSetting label="Grammar per day" value={progress.settings.grammarDaily} min={1} max={20} onChange={(grammarDaily) => updateSettings({ grammarDaily })} /></div><label className="toggle-row"><span><strong>Return-time quick quiz</strong><small>One blocking recall question in each new four-hour window.</small></span><input type="checkbox" checked={progress.settings.gateQuiz} onChange={(event) => updateSettings({ gateQuiz: event.target.checked })} /></label></section>
 
       <section className="section-block progress-repair">

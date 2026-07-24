@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { kanji } from '../data/kanji';
 import { vocabulary } from '../data/vocabulary';
 import { grammar } from '../data/grammar';
@@ -113,23 +113,82 @@ export function StudyProvider({ children }) {
     return { ...loaded, sessions: { ...loaded.sessions, [today]: createSession(loaded, today) } };
   });
   const [cloudReady, setCloudReady] = useState(!supabase || user.isLocal);
+  const [cloudStatus, setCloudStatus] = useState(() => ({
+    state: !supabase || user.isLocal ? 'local' : 'loading',
+    error: '',
+    lastSyncedAt: '',
+  }));
+  const saveQueueRef = useRef(Promise.resolve());
+
+  const saveToCloud = useCallback((payload) => {
+    localStorage.setItem(storageKeyFor(user.id), JSON.stringify(payload));
+
+    if (!supabase || user.isLocal) {
+      setCloudStatus({ state: 'local', error: '', lastSyncedAt: '' });
+      return Promise.resolve({ ok: true, local: true });
+    }
+
+    const operation = async () => {
+      setCloudStatus((current) => ({ ...current, state: 'syncing', error: '' }));
+      const requestedAt = new Date().toISOString();
+      const { data, error } = await supabase
+        .from('user_progress')
+        .upsert({
+          user_id: user.id,
+          progress: payload,
+          updated_at: requestedAt,
+        }, { onConflict: 'user_id' })
+        .select('updated_at')
+        .single();
+
+      if (error) {
+        setCloudStatus((current) => ({
+          ...current,
+          state: 'error',
+          error: error.message || 'Supabase could not save your progress.',
+        }));
+        return { ok: false, error };
+      }
+
+      const lastSyncedAt = data?.updated_at || requestedAt;
+      setCloudStatus({ state: 'synced', error: '', lastSyncedAt });
+      return { ok: true, lastSyncedAt };
+    };
+
+    saveQueueRef.current = saveQueueRef.current.then(operation, operation);
+    return saveQueueRef.current;
+  }, [user.id, user.isLocal]);
 
   useEffect(() => {
     if (!supabase || user.isLocal) return undefined;
     let active = true;
     supabase
       .from('user_progress')
-      .select('progress')
+      .select('progress, updated_at')
       .eq('user_id', user.id)
       .maybeSingle()
-      .then(({ data }) => {
+      .then(({ data, error }) => {
         if (!active) return;
+        if (error) {
+          setCloudStatus({
+            state: 'error',
+            error: error.message || 'Supabase could not load your progress.',
+            lastSyncedAt: '',
+          });
+          setCloudReady(true);
+          return;
+        }
         if (data?.progress) {
           const remote = mergeProgress(data.progress);
           setProgress(remote.sessions[today]
             ? remote
             : { ...remote, sessions: { ...remote.sessions, [today]: createSession(remote, today) } });
         }
+        setCloudStatus({
+          state: data?.progress ? 'synced' : 'ready',
+          error: '',
+          lastSyncedAt: data?.updated_at || '',
+        });
         setCloudReady(true);
       });
     return () => { active = false; };
@@ -140,14 +199,12 @@ export function StudyProvider({ children }) {
     localStorage.setItem(storageKeyFor(user.id), JSON.stringify(progress));
     if (!supabase || user.isLocal) return undefined;
     const timer = window.setTimeout(() => {
-      supabase.from('user_progress').upsert({
-        user_id: user.id,
-        progress,
-        updated_at: new Date().toISOString(),
-      }, { onConflict: 'user_id' });
+      void saveToCloud(progress);
     }, 650);
     return () => window.clearTimeout(timer);
-  }, [cloudReady, progress, user.id, user.isLocal]);
+  }, [cloudReady, progress, saveToCloud, user.id, user.isLocal]);
+
+  const syncNow = useCallback(() => saveToCloud(progress), [progress, saveToCloud]);
 
   const content = useMemo(() => ({
     kanji: applyOverride(kanji, progress.overrides.kanji, progress.custom.kanji, progress.archived.kanji),
@@ -317,7 +374,7 @@ export function StudyProvider({ children }) {
     progress, content, session, today, markLearned, review, recordQuiz, recordReading,
     nextQuizAttempt, updateSettings, editContent, addContent, archiveContent, resetItems,
     resetAll, resetTestHistory, importProgress, dismissGate, replaceOfficialKanji,
-    setCompletedKanjiDays, cloudReady,
+    setCompletedKanjiDays, cloudReady, cloudStatus, syncNow,
   };
 
   return <StudyContext.Provider value={value}>{children}</StudyContext.Provider>;
