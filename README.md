@@ -9,14 +9,18 @@ A mobile-first, local-first JLPT N4 study app for kanji, vocabulary, grammar, re
 - 84 N5 and 132 N4 grammar points
 - 81 original N4 reading drills across notices, email, work, travel, school, shopping, health, safety, timetables, and information-retrieval formats
 - 10 or more contextual examples on every kanji detail page, grouped by on’yomi and kun’yomi
+- Eye-button study aids for built-in Japanese words and sentences, hidden until requested and ordered as hiragana, romaji, then English meaning
 - Daily 5 kanji, 20 vocabulary words, and 5 grammar points
 - Optional random extra kanji that do not change official completion estimates
 - Touch flip cards, swipe rating, SRS due dates, rotating tests, and return-time one-question quizzes
+- Kanji reading tests use a kanji word with a hiragana answer; kana-only vocabulary never receives a duplicate surface/reading question
 - Searchable Library for kanji, vocabulary, grammar, readings, and sentences
 - Local Data Studio for edits, custom content, archiving, selective resets, and JSON backup/import
 - Installable PWA behavior and offline caching after the first production visit
 
 The app opens on a login screen. Without Supabase keys it creates a local profile and stores progress on that device. With Supabase configured it uses email/password authentication, keeps a per-user local cache, and synchronizes the same progress document to Postgres.
+
+The pronunciation and meaning reveals are static app content. This update does not change the Supabase schema or the saved progress document, so existing accounts and progress remain compatible.
 
 ## Run Locally
 
@@ -57,6 +61,12 @@ The optional full browser check uses a packaged headless Chromium:
 
 ```bash
 npm run test:browser
+```
+
+If lesson data changes, rebuild its offline reading aids before verification:
+
+```bash
+npm run data:support
 ```
 
 ## Deploy

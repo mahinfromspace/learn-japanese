@@ -13,7 +13,8 @@
     "test:browser": "node scripts/browser-check.mjs",
     "data:vocabulary": "node scripts/build-vocab.mjs",
     "data:grammar": "node scripts/build-grammar.mjs",
-    "data:romaji": "node scripts/build-reading-romaji.mjs"
+    "data:romaji": "node scripts/build-reading-romaji.mjs",
+    "data:support": "node scripts/build-study-support.mjs"
   },
   "dependencies": {
     "@fontsource-variable/noto-sans-jp": "^5.3.0",

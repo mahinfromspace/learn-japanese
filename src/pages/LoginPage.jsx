@@ -1,4 +1,4 @@
-import { BookOpenCheck, Database, LockKeyhole, Mail, UserRound } from 'lucide-react';
+import { BookOpenCheck, Database, Eye, EyeOff, LockKeyhole, Mail, UserRound } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth } from '../state/AuthContext';
 
@@ -8,6 +8,7 @@ export function LoginPage() {
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
 
@@ -72,7 +73,13 @@ export function LoginPage() {
               </label>
               <label>
                 <span>Password</span>
-                <div className="login-field"><LockKeyhole /><input required minLength={6} type="password" autoComplete={mode === 'signup' ? 'new-password' : 'current-password'} value={password} onChange={(event) => setPassword(event.target.value)} placeholder="At least 6 characters" /></div>
+                <div className="login-field password-field">
+                  <LockKeyhole />
+                  <input required minLength={6} type={showPassword ? 'text' : 'password'} autoComplete={mode === 'signup' ? 'new-password' : 'current-password'} value={password} onChange={(event) => setPassword(event.target.value)} placeholder="At least 6 characters" />
+                  <button className="password-toggle" type="button" aria-label={showPassword ? 'Hide password' : 'Show password'} title={showPassword ? 'Hide password' : 'Show password'} onClick={() => setShowPassword((value) => !value)}>
+                    {showPassword ? <EyeOff /> : <Eye />}
+                  </button>
+                </div>
               </label>
             </>
           )}
@@ -86,4 +93,3 @@ export function LoginPage() {
     </main>
   );
 }
-

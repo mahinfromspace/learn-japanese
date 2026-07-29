@@ -67,11 +67,11 @@ export function AuthProvider({ children }) {
 
   const signOut = async () => {
     if (supabase && !user?.isLocal) {
-      return supabase.auth.signOut();
+      await supabase.auth.signOut();
+      return;
     }
     localStorage.removeItem(LOCAL_AUTH_KEY);
     setUser(null);
-    return { error: null };
   };
 
   const value = {
