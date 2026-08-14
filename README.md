@@ -1,28 +1,23 @@
-# N4 Daily
+# JapaneseForToday
 
-A mobile-first, local-first JLPT N4 study app for kanji, vocabulary, grammar, reading, flashcards, and adaptive tests.
+A mobile-first JLPT N4 and N3 study app for kanji, vocabulary, grammar, real-life reading, flashcards, custom sessions, and adaptive tests.
 
 ## Included
 
-- 167 N4-specific kanji with canonical detail pages and quick previews
-- 571 N4 vocabulary entries with readings, romaji, context notes, and examples
-- 84 N5 and 132 N4 grammar points
-- 81 original N4 reading drills across notices, email, work, travel, school, shopping, health, safety, timetables, and information-retrieval formats
-- 10 or more contextual examples on every kanji detail page, grouped by on’yomi and kun’yomi
-- Eye-button study aids for built-in Japanese words and sentences, hidden until requested and ordered as hiragana, romaji, then English meaning
-- Daily 5 kanji, 20 vocabulary words, and 5 grammar points
-- Optional random extra kanji that do not change official completion estimates
-- Touch flip cards, swipe rating, SRS due dates, rotating tests, and return-time one-question quizzes
-- Kanji reading tests use a kanji word with a hiragana answer; kana-only vocabulary never receives a duplicate surface/reading question
-- Searchable Library for kanji, vocabulary, grammar, readings, and sentences
-- Local Data Studio for edits, custom content, archiving, selective resets, and JSON backup/import
-- Installable PWA behavior and offline caching after the first production visit
+- 167 N4 kanji plus the exact user-provided 370-kanji N3 catalog
+- 571 N4 vocabulary entries plus the exact user-provided 192-word N3 catalog
+- 84 N5, 132 N4, and 182 N3 grammar points
+- 81 N4 reading drills and 15 longer N3 exam-style passages based on forms, notices, work, travel, services, and everyday incidents
+- Adjustable daily kanji, vocabulary, and grammar counts up to the complete active catalog
+- A custom-session builder that can study or test any selected learned or unlearned items across levels
+- Vocabulary tests that keep the Japanese spelling and hiragana together and test meaning/recognition instead of kanji reading recall
+- Reading aids shown openly for kanji and vocabulary, while sentence and reading-passage help stays behind an optional reveal
+- Per-item SRS history, selective progress repair, full JSON backup/import, and editable local catalogs
+- A comparable 1,000-point profile score and authenticated Supabase leaderboard
+- Persistent Supabase sessions, local fallback profiles, a password visibility button, and no post-login quiz popup
+- Responsive navigation with a back action on every signed-in subpage, smoother motion, PWA caching, and Vercel/Netlify SPA routing
 
-The app opens on a login screen. Without Supabase keys it creates a local profile and stores progress on that device. With Supabase configured it uses email/password authentication, keeps a per-user local cache, and synchronizes the same progress document to Postgres.
-
-The pronunciation and meaning reveals are static app content. This update does not change the Supabase schema or the saved progress document, so existing accounts and progress remain compatible.
-
-## Run Locally
+## Run locally
 
 Use Node.js 20 or newer.
 
@@ -33,21 +28,17 @@ npm run dev
 
 Open `http://127.0.0.1:5173`.
 
-### Connect Supabase
+## Connect or update Supabase
 
 1. Copy `.env.example` to `.env.local`.
-2. Add the project URL and publishable key from Supabase.
+2. Add the Supabase project URL and publishable key.
 3. In Supabase, open **SQL Editor** and run `supabase/schema.sql`.
-4. In **Authentication → URL Configuration**, add your local and production URLs.
-5. Restart `npm run dev`.
+4. In **Authentication → URL Configuration**, add the local and production URLs.
+5. Restart the app.
 
-Never put the database password or service-role key in `.env.local`. The browser app only uses the publishable key. Keep `.env.local` out of Git.
+Existing `user_progress` rows remain compatible. Running the updated schema adds the privacy-safe `user_scores` table used by the leaderboard. Row Level Security lets each user edit only their own progress and score; signed-in users can read display names and overall scores for comparison. Email addresses are not stored in the leaderboard table.
 
-To open the dev server to other devices on your local network:
-
-```bash
-npm run dev:network
-```
+The browser app must only use the publishable/anon key. Never add a database password or service-role key to `.env.local`, and never commit that file.
 
 ## Verify
 
@@ -55,42 +46,39 @@ npm run dev:network
 npm test
 npm run lint
 npm run build
-```
-
-The optional full browser check uses a packaged headless Chromium:
-
-```bash
 npm run test:browser
 ```
 
-If lesson data changes, rebuild its offline reading aids before verification:
+The browser check covers N3 switching, custom study, open vocabulary readings, global back navigation, the lack of a login quiz popup, responsive layouts, profile scoring, and the password eye control.
+
+If source lesson data changes, rebuild generated pronunciation aids:
 
 ```bash
+npm run data:romaji
 npm run data:support
 ```
 
 ## Deploy
 
+### Vercel
+
+The included `vercel.json` provides the single-page-app rewrite.
+
+- Build command: `npm run build`
+- Output directory: `dist`
+- Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` in the Vercel project environment
+
 ### Netlify
 
-The included `netlify.toml` configures the build and SPA fallback.
+The existing `netlify.toml` and `public/_redirects` provide the same SPA fallback.
 
-1. Push the project to GitHub or upload it to Netlify.
-2. Build command: `npm run build`
-3. Publish directory: `dist`
+- Build command: `npm run build`
+- Publish directory: `dist`
 
-### Vercel or Cloudflare Pages
+## Overall score
 
-Use `npm run build` and publish `dist`. Configure every unknown route to rewrite to `/index.html` so direct detail-page URLs work.
+The profile score is capped at 1,000 points and factors in kanji completion (220), vocabulary completion (220), grammar completion (180), reading completion (160), quiz/reading accuracy (140), and study consistency across 30 active days (80). The same formula is used for every user.
 
-## Database Design
+## Data design
 
-The included first deployment uses one protected JSON progress document per authenticated user. Row Level Security ensures users can only read and write their own row. Static lesson data stays versioned with the app. This keeps the first deployment simple while retaining the localStorage cache and JSON import/export.
-
-When you later add N3/N2/N1 or a multi-editor content system, normalize the catalogs into separate kanji, vocabulary, grammar, reading, example, and relationship tables without changing the existing progress API all at once.
-
-## Content Notes
-
-The JLPT does not publish a fixed official vocabulary, kanji, or grammar list. The catalogs in this app are study targets assembled from the user-provided JLPT Sensei lists; examples, reading passages, explanations, and app behavior are original to this project. The official JLPT test-item descriptions informed the quiz and reading formats.
-
-Data builders are kept in `scripts/` so list extraction and romaji preprocessing are reproducible. The generated catalog files are committed so the running app never needs those websites or a dictionary server.
+Static lesson catalogs stay versioned with the app. Per-user progress is cached in localStorage and synchronized as one JSON document in `user_progress`; the compact leaderboard projection is stored separately in `user_scores`. This keeps the existing Supabase/Vercel architecture intact while adding N3 and comparison features.

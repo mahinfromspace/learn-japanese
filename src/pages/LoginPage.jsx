@@ -36,13 +36,13 @@ export function LoginPage() {
     <main className="login-page">
       <section className="login-intro">
         <span className="login-mark">日</span>
-        <p className="eyebrow">JLPT N4 STUDY SYSTEM</p>
+        <p className="eyebrow">JAPANESEFORTODAY · JLPT N4 + N3</p>
         <h1>Your Japanese progress, ready when you are.</h1>
-        <p>Daily kanji, vocabulary, grammar, reading, flashcards, and review history in one mobile-first app.</p>
+        <p>Adjustable kanji, vocabulary, grammar, real-life reading, custom sessions, and review history in one mobile-first app.</p>
         <div className="login-points">
-          <span><BookOpenCheck /> Daily sets stay consistent</span>
+          <span><BookOpenCheck /> Daily sets stay adjustable</span>
           <span><Database /> Progress is ready for Supabase sync</span>
-          <span><LockKeyhole /> Every account keeps separate data</span>
+          <span><LockKeyhole /> Sessions stay signed in securely</span>
         </div>
       </section>
 

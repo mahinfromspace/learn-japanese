@@ -7,15 +7,19 @@ import { useStudy } from '../state/StudyContext';
 
 export function LinkedJapanese({ children, className = '' }) {
   const [selected, setSelected] = useState(null);
-  const { content } = useStudy();
+  const { content, activeLevel } = useStudy();
   const text = String(children ?? '');
-  const current = selected && (content.kanji.find((item) => item.character === selected) || kanjiByCharacter[selected]);
+  const current = selected && (
+    content.kanji.find((item) => item.character === selected && item.level === activeLevel)
+    || content.kanji.find((item) => item.character === selected)
+    || kanjiByCharacter[selected]
+  );
 
   return (
     <>
       <span className={className}>
         {[...text].map((character, index) => {
-          const linked = kanjiByCharacter[character];
+          const linked = content.kanji.some((item) => item.character === character);
           return linked ? (
             <span
               className="kanji-inline"
@@ -37,7 +41,7 @@ export function LinkedJapanese({ children, className = '' }) {
             <button className="icon-button sheet-close" type="button" onClick={() => setSelected(null)} aria-label="Close preview"><X /></button>
             <div className="quick-kanji">{current.character}</div>
             <div>
-              <p className="eyebrow">N4 KANJI QUICK LOOK</p>
+              <p className="eyebrow">{current.level} KANJI QUICK LOOK</p>
               <h2>{current.meaning}</h2>
               <p><strong>On:</strong> {current.onyomi} <span className="dot">·</span> <strong>Kun:</strong> {current.kunyomi}</p>
               <p className="quick-word">{current.word} <span>{current.wordReading}</span> · {current.wordMeaning}</p>

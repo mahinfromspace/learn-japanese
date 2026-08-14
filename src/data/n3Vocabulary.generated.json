@@ -1,0 +1,4226 @@
+[
+  {
+    "id": "v-n3-001",
+    "order": 1,
+    "word": "明かり",
+    "reading": "あかり",
+    "romaji": "akari",
+    "meaning": "light; illumination; glow; gleam",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 明かり when the context expresses light.",
+    "realLife": "Clinics, medicine instructions, health forms, and emergencies",
+    "examples": [
+      {
+        "japanese": "ニュースで「明かり」についての記事を読みました。",
+        "english": "I read a news article about light."
+      },
+      {
+        "japanese": "「明かり」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 明かり from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-002",
+    "order": 2,
+    "word": "明ける",
+    "reading": "あける",
+    "romaji": "akeru",
+    "meaning": "to dawn,to become daylight",
+    "level": "N3",
+    "type": "Verb, Ichidan verb, Transitive verb",
+    "commonUsage": "Use 明ける when the context expresses to dawn,to become daylight.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「明ける」という動詞が使われました。",
+        "english": "The verb “明ける” (dawn,to become daylight) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「明ける」のか考えてください。",
+        "english": "Consider why someone would dawn,to become daylight in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-003",
+    "order": 3,
+    "word": "明らか",
+    "reading": "あきらか",
+    "romaji": "akiraka",
+    "meaning": "clear; obvious",
+    "level": "N3",
+    "type": "Adjective, な-adjective",
+    "commonUsage": "Use 明らか when the context expresses clear.",
+    "realLife": "Everyday conversation, public information, articles, and exam-style sentences",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「明らか」と言えるか考えました。",
+        "english": "I read the explanation and considered when 明らか can be used."
+      },
+      {
+        "japanese": "写真の様子を「明らか」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 明らか."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-004",
+    "order": 4,
+    "word": "悪魔",
+    "reading": "あくま",
+    "romaji": "akuma",
+    "meaning": "devil; demon; fiend; Satan",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 悪魔 when the context expresses devil.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「悪魔」についての記事を読みました。",
+        "english": "I read a news article about devil."
+      },
+      {
+        "japanese": "「悪魔」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 悪魔 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-005",
+    "order": 5,
+    "word": "暗記",
+    "reading": "あんき",
+    "romaji": "anki",
+    "meaning": "memorization; learning by heart",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 暗記 when the context expresses memorization.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「暗記」という動詞が使われました。",
+        "english": "The verb “暗記” (memorization) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「暗記」のか考えてください。",
+        "english": "Consider why someone would memorization in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-006",
+    "order": 6,
+    "word": "新た",
+    "reading": "あらた",
+    "romaji": "arata",
+    "meaning": "new; fresh; novel",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 新た when the context expresses new.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「新た」と言えるか考えました。",
+        "english": "I read the explanation and considered when 新た can be used."
+      },
+      {
+        "japanese": "写真の様子を「新た」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 新た."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-007",
+    "order": 7,
+    "word": "有らゆる",
+    "reading": "あらゆる",
+    "romaji": "arayuru",
+    "meaning": "all; every​",
+    "level": "N3",
+    "type": "Pre-noun adjectival",
+    "commonUsage": "Use 有らゆる when the context expresses all.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「有らゆる」についての記事を読みました。",
+        "english": "I read a news article about all."
+      },
+      {
+        "japanese": "「有らゆる」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 有らゆる from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-008",
+    "order": 8,
+    "word": "集まり",
+    "reading": "あつまり",
+    "romaji": "atsumari",
+    "meaning": "gathering; meeting; assembly; collection; attendance",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 集まり when the context expresses gathering.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「集まり」についての記事を読みました。",
+        "english": "I read a news article about gathering."
+      },
+      {
+        "japanese": "「集まり」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 集まり from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-009",
+    "order": 9,
+    "word": "部分",
+    "reading": "ぶぶん",
+    "romaji": "bubun",
+    "meaning": "portion; section; part",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 部分 when the context expresses portion.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「部分」についての記事を読みました。",
+        "english": "I read a news article about portion."
+      },
+      {
+        "japanese": "「部分」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 部分 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-010",
+    "order": 10,
+    "word": "分",
+    "reading": "ぶん",
+    "romaji": "bun",
+    "meaning": "part; segment; share; ration",
+    "level": "N3",
+    "type": "Noun, Suffix",
+    "commonUsage": "Use 分 when the context expresses part.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「分」についての記事を読みました。",
+        "english": "I read a news article about part."
+      },
+      {
+        "japanese": "「分」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 分 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-011",
+    "order": 11,
+    "word": "文明",
+    "reading": "ぶんめい",
+    "romaji": "bunmei",
+    "meaning": "civilization; culture",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 文明 when the context expresses civilization.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「文明」についての記事を読みました。",
+        "english": "I read a news article about civilization."
+      },
+      {
+        "japanese": "「文明」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 文明 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-012",
+    "order": 12,
+    "word": "分析",
+    "reading": "ぶんせき",
+    "romaji": "bunseki",
+    "meaning": "analysis",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 分析 when the context expresses analysis.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「分析」という動詞が使われました。",
+        "english": "The verb “分析” (analysis) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「分析」のか考えてください。",
+        "english": "Consider why someone would analysis in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-013",
+    "order": 13,
+    "word": "分野",
+    "reading": "ぶんや",
+    "romaji": "bunya",
+    "meaning": "field; sphere; realm; division; branch",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 分野 when the context expresses field.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「分野」についての記事を読みました。",
+        "english": "I read a news article about field."
+      },
+      {
+        "japanese": "「分野」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 分野 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-014",
+    "order": 14,
+    "word": "父親",
+    "reading": "ちちおや",
+    "romaji": "chichioya",
+    "meaning": "father",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 父親 when the context expresses father.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「父親」についての記事を読みました。",
+        "english": "I read a news article about father."
+      },
+      {
+        "japanese": "「父親」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 父親 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-015",
+    "order": 15,
+    "word": "地平線",
+    "reading": "ちへいせん",
+    "romaji": "chiheisen",
+    "meaning": "horizon (related to land)​",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 地平線 when the context expresses horizon (related to land)​.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「地平線」についての記事を読みました。",
+        "english": "I read a news article about horizon (related to land)​."
+      },
+      {
+        "japanese": "「地平線」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 地平線 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-016",
+    "order": 16,
+    "word": "地位",
+    "reading": "ちい",
+    "romaji": "chii",
+    "meaning": "(social) position; status",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 地位 when the context expresses (social) position.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「地位」についての記事を読みました。",
+        "english": "I read a news article about (social) position."
+      },
+      {
+        "japanese": "「地位」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 地位 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-017",
+    "order": 17,
+    "word": "長期",
+    "reading": "ちょうき",
+    "romaji": "chouki",
+    "meaning": "long-term",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 長期 when the context expresses long-term.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「長期」についての記事を読みました。",
+        "english": "I read a news article about long-term."
+      },
+      {
+        "japanese": "「長期」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 長期 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-018",
+    "order": 18,
+    "word": "中",
+    "reading": "ちゅう",
+    "romaji": "chuu",
+    "meaning": "during; while; medium; middle",
+    "level": "N3",
+    "type": "Noun, Prefix, Suffix",
+    "commonUsage": "Use 中 when the context expresses during.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「中」についての記事を読みました。",
+        "english": "I read a news article about during."
+      },
+      {
+        "japanese": "「中」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 中 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-019",
+    "order": 19,
+    "word": "中学",
+    "reading": "ちゅうがく",
+    "romaji": "chuugaku",
+    "meaning": "junior high school; middle school",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 中学 when the context expresses junior high school.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「中学」についての記事を読みました。",
+        "english": "I read a news article about junior high school."
+      },
+      {
+        "japanese": "「中学」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 中学 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-020",
+    "order": 20,
+    "word": "昼食",
+    "reading": "ちゅうしょく",
+    "romaji": "chuushoku",
+    "meaning": "lunch; midday meal",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 昼食 when the context expresses lunch.",
+    "realLife": "Purchases, products, receipts, services, and consumer information",
+    "examples": [
+      {
+        "japanese": "ニュースで「昼食」についての記事を読みました。",
+        "english": "I read a news article about lunch."
+      },
+      {
+        "japanese": "「昼食」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 昼食 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-021",
+    "order": 21,
+    "word": "大部分",
+    "reading": "だいぶぶん",
+    "romaji": "daibubun",
+    "meaning": "most part; greater part; majority",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 大部分 when the context expresses most part.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「大部分」についての記事を読みました。",
+        "english": "I read a news article about most part."
+      },
+      {
+        "japanese": "「大部分」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 大部分 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-022",
+    "order": 22,
+    "word": "駄目",
+    "reading": "だめ",
+    "romaji": "dame",
+    "meaning": "no good; cannot",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 駄目 when the context expresses no good.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「駄目」と言えるか考えました。",
+        "english": "I read the explanation and considered when 駄目 can be used."
+      },
+      {
+        "japanese": "写真の様子を「駄目」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 駄目."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-023",
+    "order": 23,
+    "word": "男子",
+    "reading": "だんし",
+    "romaji": "danshi",
+    "meaning": "youth; young man",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 男子 when the context expresses youth.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「男子」についての記事を読みました。",
+        "english": "I read a news article about youth."
+      },
+      {
+        "japanese": "「男子」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 男子 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-024",
+    "order": 24,
+    "word": "出会い",
+    "reading": "であい",
+    "romaji": "deai",
+    "meaning": "meeting; rendezvous; encounter",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 出会い when the context expresses meeting.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「出会い」についての記事を読みました。",
+        "english": "I read a news article about meeting."
+      },
+      {
+        "japanese": "「出会い」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 出会い from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-025",
+    "order": 25,
+    "word": "出会う",
+    "reading": "であう",
+    "romaji": "deau",
+    "meaning": "to meet (by chance); to come across; to run across; to encounter",
+    "level": "N3",
+    "type": "Verb",
+    "commonUsage": "Use 出会う when the context expresses to meet (by chance).",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「出会う」という動詞が使われました。",
+        "english": "The verb “出会う” (meet (by chance)) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「出会う」のか考えてください。",
+        "english": "Consider why someone would meet (by chance) in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-026",
+    "order": 26,
+    "word": "読書",
+    "reading": "どくしょ",
+    "romaji": "dokusho",
+    "meaning": "reading",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 読書 when the context expresses reading.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「読書」という動詞が使われました。",
+        "english": "The verb “読書” (reading) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「読書」のか考えてください。",
+        "english": "Consider why someone would reading in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-027",
+    "order": 27,
+    "word": "努力",
+    "reading": "どりょく",
+    "romaji": "doryoku",
+    "meaning": "effort; exertion; endeavor; hard work; striving",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 努力 when the context expresses effort.",
+    "realLife": "Workplaces, formal messages, meetings, and schedules",
+    "examples": [
+      {
+        "japanese": "会話の中で「努力」という動詞が使われました。",
+        "english": "The verb “努力” (effort) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「努力」のか考えてください。",
+        "english": "Consider why someone would effort in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-028",
+    "order": 28,
+    "word": "同一",
+    "reading": "どういつ",
+    "romaji": "douitsu",
+    "meaning": "identical; same; one and the same; equal",
+    "level": "N3",
+    "type": "Adjective, な-adjective",
+    "commonUsage": "Use 同一 when the context expresses identical.",
+    "realLife": "Everyday conversation, public information, articles, and exam-style sentences",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「同一」と言えるか考えました。",
+        "english": "I read the explanation and considered when 同一 can be used."
+      },
+      {
+        "japanese": "写真の様子を「同一」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 同一."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-029",
+    "order": 29,
+    "word": "円",
+    "reading": "えん",
+    "romaji": "en",
+    "meaning": "yen; Japanese monetary unit; circle",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 円 when the context expresses yen.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「円」についての記事を読みました。",
+        "english": "I read a news article about yen."
+      },
+      {
+        "japanese": "「円」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 円 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-030",
+    "order": 30,
+    "word": "不利",
+    "reading": "ふり",
+    "romaji": "furi",
+    "meaning": "disadvantage; handicap; unfavorable position",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 不利 when the context expresses disadvantage.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「不利」と言えるか考えました。",
+        "english": "I read the explanation and considered when 不利 can be used."
+      },
+      {
+        "japanese": "写真の様子を「不利」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 不利."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-031",
+    "order": 31,
+    "word": "不足",
+    "reading": "ふそく",
+    "romaji": "fusoku",
+    "meaning": "insufficiency; shortage; deficiency; lack; dearth",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective, Verb, Suru verb",
+    "commonUsage": "Use 不足 when the context expresses insufficiency.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「不足」という動詞が使われました。",
+        "english": "The verb “不足” (insufficiency) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「不足」のか考えてください。",
+        "english": "Consider why someone would insufficiency in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-032",
+    "order": 32,
+    "word": "再び",
+    "reading": "ふたたび",
+    "romaji": "futatabi",
+    "meaning": "again; once more; a second time",
+    "level": "N3",
+    "type": "Adverb",
+    "commonUsage": "Use 再び when the context expresses again.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「再び」という動詞が使われました。",
+        "english": "The verb “再び” (again) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「再び」のか考えてください。",
+        "english": "Consider why someone would again in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-033",
+    "order": 33,
+    "word": "外交",
+    "reading": "がいこう",
+    "romaji": "gaikou",
+    "meaning": "diplomacy",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 外交 when the context expresses diplomacy.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「外交」についての記事を読みました。",
+        "english": "I read a news article about diplomacy."
+      },
+      {
+        "japanese": "「外交」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 外交 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-034",
+    "order": 34,
+    "word": "外出",
+    "reading": "がいしゅつ",
+    "romaji": "gaishutsu",
+    "meaning": "going out; outing; leaving (one's home, office, etc.)",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 外出 when the context expresses going out.",
+    "realLife": "Workplaces, formal messages, meetings, and schedules",
+    "examples": [
+      {
+        "japanese": "会話の中で「外出」という動詞が使われました。",
+        "english": "The verb “外出” (going out) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「外出」のか考えてください。",
+        "english": "Consider why someone would going out in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-035",
+    "order": 35,
+    "word": "学期",
+    "reading": "がっき",
+    "romaji": "gakki",
+    "meaning": "school term; semester",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 学期 when the context expresses school term.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「学期」についての記事を読みました。",
+        "english": "I read a news article about school term."
+      },
+      {
+        "japanese": "「学期」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 学期 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-036",
+    "order": 36,
+    "word": "学",
+    "reading": "がく",
+    "romaji": "gaku",
+    "meaning": "learning; education; study of",
+    "level": "N3",
+    "type": "Noun, Suffix",
+    "commonUsage": "Use 学 when the context expresses learning.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「学」についての記事を読みました。",
+        "english": "I read a news article about learning."
+      },
+      {
+        "japanese": "「学」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 学 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-037",
+    "order": 37,
+    "word": "学問",
+    "reading": "がくもん",
+    "romaji": "gakumon",
+    "meaning": "scholarship; study; learning",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 学問 when the context expresses scholarship.",
+    "realLife": "Travel changes, public announcements, maps, tickets, and schedules",
+    "examples": [
+      {
+        "japanese": "会話の中で「学問」という動詞が使われました。",
+        "english": "The verb “学問” (scholarship) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「学問」のか考えてください。",
+        "english": "Consider why someone would scholarship in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-038",
+    "order": 38,
+    "word": "学者",
+    "reading": "がくしゃ",
+    "romaji": "gakusha",
+    "meaning": "scholar",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 学者 when the context expresses scholar.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「学者」についての記事を読みました。",
+        "english": "I read a news article about scholar."
+      },
+      {
+        "japanese": "「学者」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 学者 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-039",
+    "order": 39,
+    "word": "学習",
+    "reading": "がくしゅう",
+    "romaji": "gakushuu",
+    "meaning": "study; learning; tutorial",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 学習 when the context expresses study.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "会話の中で「学習」という動詞が使われました。",
+        "english": "The verb “学習” (study) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「学習」のか考えてください。",
+        "english": "Consider why someone would study in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-040",
+    "order": 40,
+    "word": "議長",
+    "reading": "ぎちょう",
+    "romaji": "gichou",
+    "meaning": "chairman; president; moderator",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 議長 when the context expresses chairman.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「議長」についての記事を読みました。",
+        "english": "I read a news article about chairman."
+      },
+      {
+        "japanese": "「議長」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 議長 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-041",
+    "order": 41,
+    "word": "議会",
+    "reading": "ぎかい",
+    "romaji": "gikai",
+    "meaning": "congress; parliament; diet; legislative assembly",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 議会 when the context expresses congress.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「議会」についての記事を読みました。",
+        "english": "I read a news article about congress."
+      },
+      {
+        "japanese": "「議会」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 議会 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-042",
+    "order": 42,
+    "word": "語学",
+    "reading": "ごがく",
+    "romaji": "gogaku",
+    "meaning": "study of foreign languages; linguistics",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 語学 when the context expresses study of foreign languages.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「語学」についての記事を読みました。",
+        "english": "I read a news article about study of foreign languages."
+      },
+      {
+        "japanese": "「語学」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 語学 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-043",
+    "order": 43,
+    "word": "激しい",
+    "reading": "はげしい",
+    "romaji": "hageshii",
+    "meaning": "violent; extreme; intense",
+    "level": "N3",
+    "type": "Adjective, い-adjective",
+    "commonUsage": "Use 激しい when the context expresses violent.",
+    "realLife": "Everyday conversation, public information, articles, and exam-style sentences",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「激しい」と言えるか考えました。",
+        "english": "I read the explanation and considered when 激しい can be used."
+      },
+      {
+        "japanese": "写真の様子を「激しい」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 激しい."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-044",
+    "order": 44,
+    "word": "母親",
+    "reading": "ははおや",
+    "romaji": "hahaoya",
+    "meaning": "mother",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 母親 when the context expresses mother.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「母親」についての記事を読みました。",
+        "english": "I read a news article about mother."
+      },
+      {
+        "japanese": "「母親」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 母親 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-045",
+    "order": 45,
+    "word": "博物館",
+    "reading": "はくぶつかん",
+    "romaji": "hakubutsukan",
+    "meaning": "museum",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 博物館 when the context expresses museum.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「博物館」についての記事を読みました。",
+        "english": "I read a news article about museum."
+      },
+      {
+        "japanese": "「博物館」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 博物館 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-046",
+    "order": 46,
+    "word": "販売",
+    "reading": "はんばい",
+    "romaji": "hanbai",
+    "meaning": "sales; selling; marketing",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 販売 when the context expresses sales.",
+    "realLife": "Purchases, products, receipts, services, and consumer information",
+    "examples": [
+      {
+        "japanese": "会話の中で「販売」という動詞が使われました。",
+        "english": "The verb “販売” (sales) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「販売」のか考えてください。",
+        "english": "Consider why someone would sales in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-047",
+    "order": 47,
+    "word": "発明",
+    "reading": "はつめい",
+    "romaji": "hatsumei",
+    "meaning": "invention",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective, Verb, Suru verb",
+    "commonUsage": "Use 発明 when the context expresses invention.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「発明」という動詞が使われました。",
+        "english": "The verb “発明” (invention) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「発明」のか考えてください。",
+        "english": "Consider why someone would invention in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-048",
+    "order": 48,
+    "word": "外す",
+    "reading": "はずす",
+    "romaji": "hazusu",
+    "meaning": "to remove; to undo; to drop; to miss",
+    "level": "N3",
+    "type": "Verb, Godan verb, Transitive verb",
+    "commonUsage": "Use 外す when the context expresses to remove.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「外す」という動詞が使われました。",
+        "english": "The verb “外す” (remove) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「外す」のか考えてください。",
+        "english": "Consider why someone would remove in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-049",
+    "order": 49,
+    "word": "品",
+    "reading": "ひん",
+    "romaji": "hin",
+    "meaning": "elegance, article",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 品 when the context expresses elegance, article.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「品」についての記事を読みました。",
+        "english": "I read a news article about elegance, article."
+      },
+      {
+        "japanese": "「品」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 品 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-050",
+    "order": 50,
+    "word": "一言",
+    "reading": "ひとこと",
+    "romaji": "hitokoto",
+    "meaning": "single word; a few words; brief comment",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 一言 when the context expresses single word.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「一言」という動詞が使われました。",
+        "english": "The verb “一言” (single word) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「一言」のか考えてください。",
+        "english": "Consider why someone would single word in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-051",
+    "order": 51,
+    "word": "一人一人",
+    "reading": "ひとりひとり",
+    "romaji": "hitorihitori",
+    "meaning": "one by one; each; one at a time",
+    "level": "N3",
+    "type": "Noun, Suffix",
+    "commonUsage": "Use 一人一人 when the context expresses one by one.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「一人一人」についての記事を読みました。",
+        "english": "I read a news article about one by one."
+      },
+      {
+        "japanese": "「一人一人」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 一人一人 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-052",
+    "order": 52,
+    "word": "本物",
+    "reading": "ほんもの",
+    "romaji": "honmono",
+    "meaning": "genuine article; real thing; real deal​",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 本物 when the context expresses genuine article.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「本物」についての記事を読みました。",
+        "english": "I read a news article about genuine article."
+      },
+      {
+        "japanese": "「本物」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 本物 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-053",
+    "order": 53,
+    "word": "本人",
+    "reading": "ほんにん",
+    "romaji": "honnin",
+    "meaning": "the person in question; the person themselves; said person",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 本人 when the context expresses the person in question.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「本人」についての記事を読みました。",
+        "english": "I read a news article about the person in question."
+      },
+      {
+        "japanese": "「本人」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 本人 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-054",
+    "order": 54,
+    "word": "一致",
+    "reading": "いっち",
+    "romaji": "icchi",
+    "meaning": "agreement; union; match​; coincidence",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 一致 when the context expresses agreement.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「一致」という動詞が使われました。",
+        "english": "The verb “一致” (agreement) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「一致」のか考えてください。",
+        "english": "Consider why someone would agreement in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-055",
+    "order": 55,
+    "word": "一時",
+    "reading": "いちじ",
+    "romaji": "ichiji",
+    "meaning": "one o'clock",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 一時 when the context expresses one o'clock.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「一時」についての記事を読みました。",
+        "english": "I read a news article about one o'clock."
+      },
+      {
+        "japanese": "「一時」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 一時 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-056",
+    "order": 56,
+    "word": "意外",
+    "reading": "いがい",
+    "romaji": "igai",
+    "meaning": "unexpected; surprising",
+    "level": "N3",
+    "type": "Adjective, な-adjective, Adverb",
+    "commonUsage": "Use 意外 when the context expresses unexpected.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「意外」という動詞が使われました。",
+        "english": "The verb “意外” (unexpected) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「意外」のか考えてください。",
+        "english": "Consider why someone would unexpected in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-057",
+    "order": 57,
+    "word": "一家",
+    "reading": "いっか",
+    "romaji": "ikka",
+    "meaning": "a family; a household; a home; one's family; whole family",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 一家 when the context expresses a family.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「一家」についての記事を読みました。",
+        "english": "I read a news article about a family."
+      },
+      {
+        "japanese": "「一家」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 一家 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-058",
+    "order": 58,
+    "word": "今に",
+    "reading": "いまに",
+    "romaji": "imani",
+    "meaning": "before long; even now",
+    "level": "N3",
+    "type": "Adverb",
+    "commonUsage": "Use 今に when the context expresses before long.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「今に」という動詞が使われました。",
+        "english": "The verb “今に” (before long) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「今に」のか考えてください。",
+        "english": "Consider why someone would before long in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-059",
+    "order": 59,
+    "word": "今にも",
+    "reading": "いまにも",
+    "romaji": "imanimo",
+    "meaning": "at any moment; at any minute; on the verge of",
+    "level": "N3",
+    "type": "Adverb",
+    "commonUsage": "Use 今にも when the context expresses at any moment.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「今にも」という動詞が使われました。",
+        "english": "The verb “今にも” (at any moment) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「今にも」のか考えてください。",
+        "english": "Consider why someone would at any moment in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-060",
+    "order": 60,
+    "word": "一般",
+    "reading": "いっぱん",
+    "romaji": "ippan",
+    "meaning": "general; universal; ordinary; average; common",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 一般 when the context expresses general.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「一般」と言えるか考えました。",
+        "english": "I read the explanation and considered when 一般 can be used."
+      },
+      {
+        "japanese": "写真の様子を「一般」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 一般."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-061",
+    "order": 61,
+    "word": "一方",
+    "reading": "いっぽう",
+    "romaji": "ippou",
+    "meaning": "one (esp. of two); one way; the other direction; although",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 一方 when the context expresses one (esp. of two).",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「一方」についての記事を読みました。",
+        "english": "I read a news article about one (esp. of two)."
+      },
+      {
+        "japanese": "「一方」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 一方 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-062",
+    "order": 62,
+    "word": "一生",
+    "reading": "いっしょう",
+    "romaji": "isshou",
+    "meaning": "whole life; a lifetime; a generation",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 一生 when the context expresses whole life.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「一生」についての記事を読みました。",
+        "english": "I read a news article about whole life."
+      },
+      {
+        "japanese": "「一生」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 一生 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-063",
+    "order": 63,
+    "word": "一種",
+    "reading": "いっしゅ",
+    "romaji": "isshu",
+    "meaning": "species; kind; variety",
+    "level": "N3",
+    "type": "Noun, Adverb",
+    "commonUsage": "Use 一種 when the context expresses species.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「一種」という動詞が使われました。",
+        "english": "The verb “一種” (species) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「一種」のか考えてください。",
+        "english": "Consider why someone would species in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-064",
+    "order": 64,
+    "word": "一瞬",
+    "reading": "いっしゅん",
+    "romaji": "isshun",
+    "meaning": "instant; moment; for an instant",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 一瞬 when the context expresses instant.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「一瞬」についての記事を読みました。",
+        "english": "I read a news article about instant."
+      },
+      {
+        "japanese": "「一瞬」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 一瞬 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-065",
+    "order": 65,
+    "word": "一層",
+    "reading": "いっそう",
+    "romaji": "issou",
+    "meaning": "much more; still more; all the more; single layer; sooner; preferably​",
+    "level": "N3",
+    "type": "Noun, Adverb",
+    "commonUsage": "Use 一層 when the context expresses much more.",
+    "realLife": "Clinics, medicine instructions, health forms, and emergencies",
+    "examples": [
+      {
+        "japanese": "会話の中で「一層」という動詞が使われました。",
+        "english": "The verb “一層” (much more) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「一層」のか考えてください。",
+        "english": "Consider why someone would much more in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-066",
+    "order": 66,
+    "word": "一体",
+    "reading": "いったい",
+    "romaji": "ittai",
+    "meaning": "(what) the heck; (why) in the world",
+    "level": "N3",
+    "type": "Noun, Adverb",
+    "commonUsage": "Use 一体 when the context expresses (what) the heck.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「一体」という動詞が使われました。",
+        "english": "The verb “一体” ((what) the heck) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「一体」のか考えてください。",
+        "english": "Consider why someone would (what) the heck in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-067",
+    "order": 67,
+    "word": "所謂",
+    "reading": "いわゆる",
+    "romaji": "iwayuru",
+    "meaning": "what is called; as it is called; the so-called; so to speak​",
+    "level": "N3",
+    "type": "Pre-noun adjectival",
+    "commonUsage": "Use 所謂 when the context expresses what is called.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「所謂」についての記事を読みました。",
+        "english": "I read a news article about what is called."
+      },
+      {
+        "japanese": "「所謂」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 所謂 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-068",
+    "order": 68,
+    "word": "邪魔",
+    "reading": "じゃま",
+    "romaji": "jama",
+    "meaning": "hindrance",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective, Suru verb",
+    "commonUsage": "Use 邪魔 when the context expresses hindrance.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「邪魔」という動詞が使われました。",
+        "english": "The verb “邪魔” (hindrance) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「邪魔」のか考えてください。",
+        "english": "Consider why someone would hindrance in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-069",
+    "order": 69,
+    "word": "化学",
+    "reading": "かがく",
+    "romaji": "kagaku",
+    "meaning": "chemistry",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 化学 when the context expresses chemistry.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「化学」についての記事を読みました。",
+        "english": "I read a news article about chemistry."
+      },
+      {
+        "japanese": "「化学」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 化学 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-070",
+    "order": 70,
+    "word": "会",
+    "reading": "かい",
+    "romaji": "kai",
+    "meaning": "meeting; assembly; party; association; club",
+    "level": "N3",
+    "type": "Noun, Suffix",
+    "commonUsage": "Use 会 when the context expresses meeting.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「会」についての記事を読みました。",
+        "english": "I read a news article about meeting."
+      },
+      {
+        "japanese": "「会」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 会 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-071",
+    "order": 71,
+    "word": "会員",
+    "reading": "かいいん",
+    "romaji": "kai'in",
+    "meaning": "member",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 会員 when the context expresses member.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「会員」についての記事を読みました。",
+        "english": "I read a news article about member."
+      },
+      {
+        "japanese": "「会員」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 会員 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-072",
+    "order": 72,
+    "word": "海外",
+    "reading": "かいがい",
+    "romaji": "kaigai",
+    "meaning": "foreign; abroad; overseas",
+    "level": "N3",
+    "type": "Noun, Adjective",
+    "commonUsage": "Use 海外 when the context expresses foreign.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「海外」と言えるか考えました。",
+        "english": "I read the explanation and considered when 海外 can be used."
+      },
+      {
+        "japanese": "写真の様子を「海外」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 海外."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-073",
+    "order": 73,
+    "word": "会合",
+    "reading": "かいごう",
+    "romaji": "kaigou",
+    "meaning": "meeting; assembly; gathering; association",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 会合 when the context expresses meeting.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「会合」という動詞が使われました。",
+        "english": "The verb “会合” (meeting) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「会合」のか考えてください。",
+        "english": "Consider why someone would meeting in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-074",
+    "order": 74,
+    "word": "会計",
+    "reading": "かいけい",
+    "romaji": "kaikei",
+    "meaning": "finance; account; treasurer; bill",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 会計 when the context expresses finance.",
+    "realLife": "Clinics, medicine instructions, health forms, and emergencies",
+    "examples": [
+      {
+        "japanese": "ニュースで「会計」についての記事を読みました。",
+        "english": "I read a news article about finance."
+      },
+      {
+        "japanese": "「会計」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 会計 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-075",
+    "order": 75,
+    "word": "開始",
+    "reading": "かいし",
+    "romaji": "kaishi",
+    "meaning": "start; commencement; beginning; initiation​",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 開始 when the context expresses start.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「開始」という動詞が使われました。",
+        "english": "The verb “開始” (start) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「開始」のか考えてください。",
+        "english": "Consider why someone would start in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-076",
+    "order": 76,
+    "word": "科目",
+    "reading": "かもく",
+    "romaji": "kamoku",
+    "meaning": "(school) subject; curriculum; course",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 科目 when the context expresses (school) subject.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「科目」についての記事を読みました。",
+        "english": "I read a news article about (school) subject."
+      },
+      {
+        "japanese": "「科目」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 科目 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-077",
+    "order": 77,
+    "word": "権利",
+    "reading": "けんり",
+    "romaji": "kenri",
+    "meaning": "right; privilege",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 権利 when the context expresses right.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「権利」についての記事を読みました。",
+        "english": "I read a news article about right."
+      },
+      {
+        "japanese": "「権利」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 権利 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-078",
+    "order": 78,
+    "word": "基本",
+    "reading": "きほん",
+    "romaji": "kihon",
+    "meaning": "basics; fundamentals; basis; foundation",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 基本 when the context expresses basics.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「基本」についての記事を読みました。",
+        "english": "I read a news article about basics."
+      },
+      {
+        "japanese": "「基本」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 基本 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-079",
+    "order": 79,
+    "word": "記事",
+    "reading": "きじ",
+    "romaji": "kiji",
+    "meaning": "article; news story; report; account",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 記事 when the context expresses article.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「記事」についての記事を読みました。",
+        "english": "I read a news article about article."
+      },
+      {
+        "japanese": "「記事」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 記事 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-080",
+    "order": 80,
+    "word": "気味",
+    "reading": "きみ",
+    "romaji": "kimi",
+    "meaning": "sensation; feeling​; tendency",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 気味 when the context expresses sensation.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「気味」についての記事を読みました。",
+        "english": "I read a news article about sensation."
+      },
+      {
+        "japanese": "「気味」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 気味 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-081",
+    "order": 81,
+    "word": "記念",
+    "reading": "きねん",
+    "romaji": "kinen",
+    "meaning": "commemoration; celebration; honoring the memory of something",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 記念 when the context expresses commemoration.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「記念」という動詞が使われました。",
+        "english": "The verb “記念” (commemoration) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「記念」のか考えてください。",
+        "english": "Consider why someone would commemoration in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-082",
+    "order": 82,
+    "word": "気に入る",
+    "reading": "きにいる",
+    "romaji": "kiniiru",
+    "meaning": "to like; to take a liking to",
+    "level": "N3",
+    "type": "Verb, Godan verb, Expression",
+    "commonUsage": "Use 気に入る when the context expresses to like.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「気に入る」という動詞が使われました。",
+        "english": "The verb “気に入る” (like) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「気に入る」のか考えてください。",
+        "english": "Consider why someone would like in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-083",
+    "order": 83,
+    "word": "記入",
+    "reading": "きにゅう",
+    "romaji": "kinyuu",
+    "meaning": "entry; filling in; filling out",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 記入 when the context expresses entry.",
+    "realLife": "Clinics, medicine instructions, health forms, and emergencies",
+    "examples": [
+      {
+        "japanese": "会話の中で「記入」という動詞が使われました。",
+        "english": "The verb “記入” (entry) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「記入」のか考えてください。",
+        "english": "Consider why someone would entry in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-084",
+    "order": 84,
+    "word": "記憶",
+    "reading": "きおく",
+    "romaji": "kioku",
+    "meaning": "memory; recollection; remembrance",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 記憶 when the context expresses memory.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「記憶」という動詞が使われました。",
+        "english": "The verb “記憶” (memory) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「記憶」のか考えてください。",
+        "english": "Consider why someone would memory in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-085",
+    "order": 85,
+    "word": "記者",
+    "reading": "きしゃ",
+    "romaji": "kisha",
+    "meaning": "reporter; journalist",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 記者 when the context expresses reporter.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「記者」についての記事を読みました。",
+        "english": "I read a news article about reporter."
+      },
+      {
+        "japanese": "「記者」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 記者 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-086",
+    "order": 86,
+    "word": "期待",
+    "reading": "きたい",
+    "romaji": "kitai",
+    "meaning": "expectation; anticipation; hope",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 期待 when the context expresses expectation.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「期待」という動詞が使われました。",
+        "english": "The verb “期待” (expectation) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「期待」のか考えてください。",
+        "english": "Consider why someone would expectation in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-087",
+    "order": 87,
+    "word": "国家",
+    "reading": "こっか",
+    "romaji": "kokka",
+    "meaning": "state; country; nation",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 国家 when the context expresses state.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「国家」についての記事を読みました。",
+        "english": "I read a news article about state."
+      },
+      {
+        "japanese": "「国家」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 国家 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-088",
+    "order": 88,
+    "word": "国会",
+    "reading": "こっかい",
+    "romaji": "kokkai",
+    "meaning": "National Diet; legislative assembly of Japan; parliament; congress",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 国会 when the context expresses national diet.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「国会」についての記事を読みました。",
+        "english": "I read a news article about National Diet."
+      },
+      {
+        "japanese": "「国会」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 国会 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-089",
+    "order": 89,
+    "word": "国境",
+    "reading": "こっきょう",
+    "romaji": "kokkyou",
+    "meaning": "national border",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 国境 when the context expresses national border.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「国境」についての記事を読みました。",
+        "english": "I read a news article about national border."
+      },
+      {
+        "japanese": "「国境」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 国境 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-090",
+    "order": 90,
+    "word": "国語",
+    "reading": "こくご",
+    "romaji": "kokugo",
+    "meaning": "national language",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 国語 when the context expresses national language.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「国語」についての記事を読みました。",
+        "english": "I read a news article about national language."
+      },
+      {
+        "japanese": "「国語」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 国語 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-091",
+    "order": 91,
+    "word": "国民",
+    "reading": "こくみん",
+    "romaji": "kokumin",
+    "meaning": "people (of a country); nation; citizen; national",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 国民 when the context expresses people (of a country).",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「国民」についての記事を読みました。",
+        "english": "I read a news article about people (of a country)."
+      },
+      {
+        "japanese": "「国民」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 国民 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-092",
+    "order": 92,
+    "word": "今後",
+    "reading": "こんご",
+    "romaji": "kongo",
+    "meaning": "from now on; hereafter",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun",
+    "commonUsage": "Use 今後 when the context expresses from now on.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「今後」という動詞が使われました。",
+        "english": "The verb “今後” (from now on) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「今後」のか考えてください。",
+        "english": "Consider why someone would from now on in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-093",
+    "order": 93,
+    "word": "今回",
+    "reading": "こんかい",
+    "romaji": "konkai",
+    "meaning": "now; this time; lately",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun",
+    "commonUsage": "Use 今回 when the context expresses now.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「今回」という動詞が使われました。",
+        "english": "The verb “今回” (now) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「今回」のか考えてください。",
+        "english": "Consider why someone would now in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-094",
+    "order": 94,
+    "word": "今日",
+    "reading": "こんにち",
+    "romaji": "konnichi",
+    "meaning": "today; this day",
+    "level": "N3",
+    "type": "Expression",
+    "commonUsage": "Use 今日 when the context expresses today.",
+    "realLife": "Everyday conversation, public information, articles, and exam-style sentences",
+    "examples": [
+      {
+        "japanese": "ニュースで「今日」についての記事を読みました。",
+        "english": "I read a news article about today."
+      },
+      {
+        "japanese": "「今日」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 今日 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-095",
+    "order": 95,
+    "word": "転ぶ",
+    "reading": "ころぶ",
+    "romaji": "korobu",
+    "meaning": "to fall down; to fall over",
+    "level": "N3",
+    "type": "Verb, Godan verb, Intransitive verb",
+    "commonUsage": "Use 転ぶ when the context expresses to fall down.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「転ぶ」という動詞が使われました。",
+        "english": "The verb “転ぶ” (fall down) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「転ぶ」のか考えてください。",
+        "english": "Consider why someone would fall down in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-096",
+    "order": 96,
+    "word": "高速",
+    "reading": "こうそく",
+    "romaji": "kousoku",
+    "meaning": "high-speed; rapid; express",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 高速 when the context expresses high-speed.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「高速」と言えるか考えました。",
+        "english": "I read the explanation and considered when 高速 can be used."
+      },
+      {
+        "japanese": "写真の様子を「高速」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 高速."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-097",
+    "order": 97,
+    "word": "訓練",
+    "reading": "くんれん",
+    "romaji": "kunren",
+    "meaning": "training; drill; practice; discipline",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 訓練 when the context expresses training.",
+    "realLife": "Travel changes, public announcements, maps, tickets, and schedules",
+    "examples": [
+      {
+        "japanese": "会話の中で「訓練」という動詞が使われました。",
+        "english": "The verb “訓練” (training) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「訓練」のか考えてください。",
+        "english": "Consider why someone would training in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-098",
+    "order": 98,
+    "word": "教科書",
+    "reading": "きょうかしょ",
+    "romaji": "kyoukasho",
+    "meaning": "textbook; coursebook; schoolbook",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 教科書 when the context expresses textbook.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「教科書」についての記事を読みました。",
+        "english": "I read a news article about textbook."
+      },
+      {
+        "japanese": "「教科書」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 教科書 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-099",
+    "order": 99,
+    "word": "協力",
+    "reading": "きょうりょく",
+    "romaji": "kyouryoku",
+    "meaning": "cooperation; collaboration",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 協力 when the context expresses cooperation.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「協力」という動詞が使われました。",
+        "english": "The verb “協力” (cooperation) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「協力」のか考えてください。",
+        "english": "Consider why someone would cooperation in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-100",
+    "order": 100,
+    "word": "強力",
+    "reading": "きょうりょく",
+    "romaji": "kyouryoku",
+    "meaning": "powerful; strong",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 強力 when the context expresses powerful.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「強力」と言えるか考えました。",
+        "english": "I read the explanation and considered when 強力 can be used."
+      },
+      {
+        "japanese": "写真の様子を「強力」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 強力."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-101",
+    "order": 101,
+    "word": "急激",
+    "reading": "きゅうげき",
+    "romaji": "kyuugeki",
+    "meaning": "sudden; abrupt; rapid; sharp; drastic; radical",
+    "level": "N3",
+    "type": "Adjective, な-adjective",
+    "commonUsage": "Use 急激 when the context expresses sudden.",
+    "realLife": "Everyday conversation, public information, articles, and exam-style sentences",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「急激」と言えるか考えました。",
+        "english": "I read the explanation and considered when 急激 can be used."
+      },
+      {
+        "japanese": "写真の様子を「急激」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 急激."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-102",
+    "order": 102,
+    "word": "急に",
+    "reading": "きゅうに",
+    "romaji": "kyuuni",
+    "meaning": "swiftly; rapidly; quickly; immediately; hastily",
+    "level": "N3",
+    "type": "Adverb",
+    "commonUsage": "Use 急に when the context expresses swiftly.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「急に」という動詞が使われました。",
+        "english": "The verb “急に” (swiftly) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「急に」のか考えてください。",
+        "english": "Consider why someone would swiftly in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-103",
+    "order": 103,
+    "word": "吸収",
+    "reading": "きゅうしゅう",
+    "romaji": "kyuushuu",
+    "meaning": "absorption; suction; attraction",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 吸収 when the context expresses absorption.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「吸収」という動詞が使われました。",
+        "english": "The verb “吸収” (absorption) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「吸収」のか考えてください。",
+        "english": "Consider why someone would absorption in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-104",
+    "order": 104,
+    "word": "急速",
+    "reading": "きゅうそく",
+    "romaji": "kyuusoku",
+    "meaning": "rapid (e.g. progress)",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 急速 when the context expresses rapid (e.g. progress).",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「急速」と言えるか考えました。",
+        "english": "I read the explanation and considered when 急速 can be used."
+      },
+      {
+        "japanese": "写真の様子を「急速」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 急速."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-105",
+    "order": 105,
+    "word": "真面目",
+    "reading": "まじめ",
+    "romaji": "majime",
+    "meaning": "serious; earnest",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 真面目 when the context expresses serious.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「真面目」と言えるか考えました。",
+        "english": "I read the explanation and considered when 真面目 can be used."
+      },
+      {
+        "japanese": "写真の様子を「真面目」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 真面目."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-106",
+    "order": 106,
+    "word": "真っ赤",
+    "reading": "まっか",
+    "romaji": "makka",
+    "meaning": "bright red; deep red; flushed (of face)",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 真っ赤 when the context expresses bright red.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「真っ赤」と言えるか考えました。",
+        "english": "I read the explanation and considered when 真っ赤 can be used."
+      },
+      {
+        "japanese": "写真の様子を「真っ赤」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 真っ赤."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-107",
+    "order": 107,
+    "word": "学ぶ",
+    "reading": "まなぶ",
+    "romaji": "manabu",
+    "meaning": "to study (in depth); to learn; to take lessons in",
+    "level": "N3",
+    "type": "Verb, Godan verb, Transitive verb",
+    "commonUsage": "Use 学ぶ when the context expresses to study (in depth).",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "会話の中で「学ぶ」という動詞が使われました。",
+        "english": "The verb “学ぶ” (study (in depth)) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「学ぶ」のか考えてください。",
+        "english": "Consider why someone would study (in depth) in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-108",
+    "order": 108,
+    "word": "万一",
+    "reading": "まんいち",
+    "romaji": "manichi",
+    "meaning": "emergency; unlikely event​; by some chance; by some possibility",
+    "level": "N3",
+    "type": "Noun, Adverb",
+    "commonUsage": "Use 万一 when the context expresses emergency.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「万一」という動詞が使われました。",
+        "english": "The verb “万一” (emergency) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「万一」のか考えてください。",
+        "english": "Consider why someone would emergency in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-109",
+    "order": 109,
+    "word": "満足",
+    "reading": "まんぞく",
+    "romaji": "manzoku",
+    "meaning": "satisfaction; contentment;​ sufficient; enough",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective, Verb, Suru verb",
+    "commonUsage": "Use 満足 when the context expresses satisfaction.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「満足」という動詞が使われました。",
+        "english": "The verb “満足” (satisfaction) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「満足」のか考えてください。",
+        "english": "Consider why someone would satisfaction in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-110",
+    "order": 110,
+    "word": "明確",
+    "reading": "めいかく",
+    "romaji": "meikaku",
+    "meaning": "clear; precise; definite; distinct",
+    "level": "N3",
+    "type": "Adjective, な-adjective",
+    "commonUsage": "Use 明確 when the context expresses clear.",
+    "realLife": "Everyday conversation, public information, articles, and exam-style sentences",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「明確」と言えるか考えました。",
+        "english": "I read the explanation and considered when 明確 can be used."
+      },
+      {
+        "japanese": "写真の様子を「明確」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 明確."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-111",
+    "order": 111,
+    "word": "飯",
+    "reading": "めし",
+    "romaji": "meshi",
+    "meaning": "cooked rice; meal",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 飯 when the context expresses cooked rice.",
+    "realLife": "Purchases, products, receipts, services, and consumer information",
+    "examples": [
+      {
+        "japanese": "ニュースで「飯」についての記事を読みました。",
+        "english": "I read a news article about cooked rice."
+      },
+      {
+        "japanese": "「飯」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 飯 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-112",
+    "order": 112,
+    "word": "味方",
+    "reading": "みかた",
+    "romaji": "mikata",
+    "meaning": "friend; ally; supporter; taking sides with; supporting",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 味方 when the context expresses friend.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「味方」という動詞が使われました。",
+        "english": "The verb “味方” (friend) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「味方」のか考えてください。",
+        "english": "Consider why someone would friend in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-113",
+    "order": 113,
+    "word": "魅力",
+    "reading": "みりょく",
+    "romaji": "miryoku",
+    "meaning": "charm; fascination; glamour; attraction; appeal",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 魅力 when the context expresses charm.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「魅力」についての記事を読みました。",
+        "english": "I read a news article about charm."
+      },
+      {
+        "japanese": "「魅力」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 魅力 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-114",
+    "order": 114,
+    "word": "木曜",
+    "reading": "もくよう",
+    "romaji": "mokuyou",
+    "meaning": "Thursday",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun",
+    "commonUsage": "Use 木曜 when the context expresses thursday.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「木曜」という動詞が使われました。",
+        "english": "The verb “木曜” (Thursday) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「木曜」のか考えてください。",
+        "english": "Consider why someone would Thursday in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-115",
+    "order": 115,
+    "word": "半ば",
+    "reading": "なかば",
+    "romaji": "nakaba",
+    "meaning": "middle; half; semi; halfway; partly",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun, Suffix, Adverbial noun",
+    "commonUsage": "Use 半ば when the context expresses middle.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「半ば」という動詞が使われました。",
+        "english": "The verb “半ば” (middle) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「半ば」のか考えてください。",
+        "english": "Consider why someone would middle in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-116",
+    "order": 116,
+    "word": "熱心",
+    "reading": "ねっしん",
+    "romaji": "nesshin",
+    "meaning": "enthusiastic; eager",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 熱心 when the context expresses enthusiastic.",
+    "realLife": "Clinics, medicine instructions, health forms, and emergencies",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「熱心」と言えるか考えました。",
+        "english": "I read the explanation and considered when 熱心 can be used."
+      },
+      {
+        "japanese": "写真の様子を「熱心」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 熱心."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-117",
+    "order": 117,
+    "word": "日本",
+    "reading": "にほん",
+    "romaji": "nihon",
+    "meaning": "Japan",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 日本 when the context expresses japan.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「日本」についての記事を読みました。",
+        "english": "I read a news article about Japan."
+      },
+      {
+        "japanese": "「日本」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 日本 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-118",
+    "order": 118,
+    "word": "能力",
+    "reading": "のうりょく",
+    "romaji": "nouryoku",
+    "meaning": "ability; faculty",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 能力 when the context expresses ability.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「能力」についての記事を読みました。",
+        "english": "I read a news article about ability."
+      },
+      {
+        "japanese": "「能力」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 能力 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-119",
+    "order": 119,
+    "word": "入場",
+    "reading": "にゅうじょう",
+    "romaji": "nyuujou",
+    "meaning": "entrance; admission; entering",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 入場 when the context expresses entrance.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「入場」という動詞が使われました。",
+        "english": "The verb “入場” (entrance) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「入場」のか考えてください。",
+        "english": "Consider why someone would entrance in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-120",
+    "order": 120,
+    "word": "お昼",
+    "reading": "おひる",
+    "romaji": "ohiru",
+    "meaning": "lunch; midday; daytime",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use お昼 when the context expresses lunch.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「お昼」についての記事を読みました。",
+        "english": "I read a news article about lunch."
+      },
+      {
+        "japanese": "「お昼」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of お昼 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-121",
+    "order": 121,
+    "word": "収める",
+    "reading": "おさめる",
+    "romaji": "osameru",
+    "meaning": "to supply; to dedicate; to make an offering; to pay",
+    "level": "N3",
+    "type": "Verb, Ichidan verb, Transitive verb",
+    "commonUsage": "Use 収める when the context expresses to supply.",
+    "realLife": "Purchases, products, receipts, services, and consumer information",
+    "examples": [
+      {
+        "japanese": "会話の中で「収める」という動詞が使われました。",
+        "english": "The verb “収める” (supply) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「収める」のか考えてください。",
+        "english": "Consider why someone would supply in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-122",
+    "order": 122,
+    "word": "連続",
+    "reading": "れんぞく",
+    "romaji": "renzoku",
+    "meaning": "continuation; succession; series",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 連続 when the context expresses continuation.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「連続」という動詞が使われました。",
+        "english": "The verb “連続” (continuation) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「連続」のか考えてください。",
+        "english": "Consider why someone would continuation in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-123",
+    "order": 123,
+    "word": "利益",
+    "reading": "りえき",
+    "romaji": "rieki",
+    "meaning": "profit; gains; benefit",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 利益 when the context expresses profit.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「利益」という動詞が使われました。",
+        "english": "The verb “利益” (profit) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「利益」のか考えてください。",
+        "english": "Consider why someone would profit in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-124",
+    "order": 124,
+    "word": "利口",
+    "reading": "りこう",
+    "romaji": "rikou",
+    "meaning": "clever; intelligent; wise; bright; sharp",
+    "level": "N3",
+    "type": "Noun, Adjective, な-adjective",
+    "commonUsage": "Use 利口 when the context expresses clever.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「利口」と言えるか考えました。",
+        "english": "I read the explanation and considered when 利口 can be used."
+      },
+      {
+        "japanese": "写真の様子を「利口」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 利口."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-125",
+    "order": 125,
+    "word": "留学",
+    "reading": "りゅうがく",
+    "romaji": "ryuugaku",
+    "meaning": "studying abroad",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 留学 when the context expresses studying abroad.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "会話の中で「留学」という動詞が使われました。",
+        "english": "The verb “留学” (studying abroad) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「留学」のか考えてください。",
+        "english": "Consider why someone would studying abroad in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-126",
+    "order": 126,
+    "word": "作品",
+    "reading": "さくひん",
+    "romaji": "sakuhin",
+    "meaning": "work of art; performance",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 作品 when the context expresses work of art.",
+    "realLife": "Workplaces, formal messages, meetings, and schedules",
+    "examples": [
+      {
+        "japanese": "ニュースで「作品」についての記事を読みました。",
+        "english": "I read a news article about work of art."
+      },
+      {
+        "japanese": "「作品」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 作品 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-127",
+    "order": 127,
+    "word": "左右",
+    "reading": "さゆう",
+    "romaji": "sayuu",
+    "meaning": "left and right",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 左右 when the context expresses left and right.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「左右」という動詞が使われました。",
+        "english": "The verb “左右” (left and right) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「左右」のか考えてください。",
+        "english": "Consider why someone would left and right in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-128",
+    "order": 128,
+    "word": "成長",
+    "reading": "せいちょう",
+    "romaji": "seichou",
+    "meaning": "growth; development; growing up; becoming an adult",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 成長 when the context expresses growth.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「成長」という動詞が使われました。",
+        "english": "The verb “成長” (growth) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「成長」のか考えてください。",
+        "english": "Consider why someone would growth in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-129",
+    "order": 129,
+    "word": "製品",
+    "reading": "せいひん",
+    "romaji": "seihin",
+    "meaning": "manufactured goods; finished goods; product",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 製品 when the context expresses manufactured goods.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「製品」についての記事を読みました。",
+        "english": "I read a news article about manufactured goods."
+      },
+      {
+        "japanese": "「製品」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 製品 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-130",
+    "order": 130,
+    "word": "青年",
+    "reading": "せいねん",
+    "romaji": "seinen",
+    "meaning": "youth; young man",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 青年 when the context expresses youth.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「青年」についての記事を読みました。",
+        "english": "I read a news article about youth."
+      },
+      {
+        "japanese": "「青年」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 青年 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-131",
+    "order": 131,
+    "word": "刺激",
+    "reading": "しげき",
+    "romaji": "shigeki",
+    "meaning": "stimulus; impetus; incentive; encouragement; motivation; provocation; excitement; thrill",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 刺激 when the context expresses stimulus.",
+    "realLife": "Clinics, medicine instructions, health forms, and emergencies",
+    "examples": [
+      {
+        "japanese": "会話の中で「刺激」という動詞が使われました。",
+        "english": "The verb “刺激” (stimulus) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「刺激」のか考えてください。",
+        "english": "Consider why someone would stimulus in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-132",
+    "order": 132,
+    "word": "資本",
+    "reading": "しほん",
+    "romaji": "shihon",
+    "meaning": "funds; capital",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 資本 when the context expresses funds.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「資本」についての記事を読みました。",
+        "english": "I read a news article about funds."
+      },
+      {
+        "japanese": "「資本」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 資本 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-133",
+    "order": 133,
+    "word": "品",
+    "reading": "しな",
+    "romaji": "shina",
+    "meaning": "article; item; thing; goods; stock; quality",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 品 when the context expresses article.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「品」についての記事を読みました。",
+        "english": "I read a news article about article."
+      },
+      {
+        "japanese": "「品」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 品 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-134",
+    "order": 134,
+    "word": "身長",
+    "reading": "しんちょう",
+    "romaji": "shinchou",
+    "meaning": "body height; stature",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 身長 when the context expresses body height.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「身長」についての記事を読みました。",
+        "english": "I read a news article about body height."
+      },
+      {
+        "japanese": "「身長」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 身長 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-135",
+    "order": 135,
+    "word": "進学",
+    "reading": "しんがく",
+    "romaji": "shingaku",
+    "meaning": "entering a higher-level school (often university)",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 進学 when the context expresses entering a higher-level school (often university).",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "会話の中で「進学」という動詞が使われました。",
+        "english": "The verb “進学” (entering a higher-level school (often university)) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「進学」のか考えてください。",
+        "english": "Consider why someone would entering a higher-level school (often university) in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-136",
+    "order": 136,
+    "word": "新鮮",
+    "reading": "しんせん",
+    "romaji": "shinsen",
+    "meaning": "fresh",
+    "level": "N3",
+    "type": "Adjective, な-adjective",
+    "commonUsage": "Use 新鮮 when the context expresses fresh.",
+    "realLife": "Everyday conversation, public information, articles, and exam-style sentences",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「新鮮」と言えるか考えました。",
+        "english": "I read the explanation and considered when 新鮮 can be used."
+      },
+      {
+        "japanese": "写真の様子を「新鮮」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 新鮮."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-137",
+    "order": 137,
+    "word": "支店",
+    "reading": "してん",
+    "romaji": "shiten",
+    "meaning": "branch office; branch store​",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 支店 when the context expresses branch office.",
+    "realLife": "Workplaces, formal messages, meetings, and schedules",
+    "examples": [
+      {
+        "japanese": "ニュースで「支店」についての記事を読みました。",
+        "english": "I read a news article about branch office."
+      },
+      {
+        "japanese": "「支店」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 支店 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-138",
+    "order": 138,
+    "word": "使用",
+    "reading": "しよう",
+    "romaji": "shiyou",
+    "meaning": "use; application; employment; utilization.",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 使用 when the context expresses use.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「使用」という動詞が使われました。",
+        "english": "The verb “使用” (use) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「使用」のか考えてください。",
+        "english": "Consider why someone would use in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-139",
+    "order": 139,
+    "word": "食品",
+    "reading": "しょくひん",
+    "romaji": "shokuhin",
+    "meaning": "food; food products",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 食品 when the context expresses food.",
+    "realLife": "Purchases, products, receipts, services, and consumer information",
+    "examples": [
+      {
+        "japanese": "ニュースで「食品」についての記事を読みました。",
+        "english": "I read a news article about food."
+      },
+      {
+        "japanese": "「食品」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 食品 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-140",
+    "order": 140,
+    "word": "書物",
+    "reading": "しょもつ",
+    "romaji": "shomotsu",
+    "meaning": "book; volume",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 書物 when the context expresses book.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「書物」についての記事を読みました。",
+        "english": "I read a news article about book."
+      },
+      {
+        "japanese": "「書物」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 書物 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-141",
+    "order": 141,
+    "word": "書類",
+    "reading": "しょるい",
+    "romaji": "shorui",
+    "meaning": "document; official papers",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 書類 when the context expresses document.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「書類」についての記事を読みました。",
+        "english": "I read a news article about document."
+      },
+      {
+        "japanese": "「書類」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 書類 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-142",
+    "order": 142,
+    "word": "書斎",
+    "reading": "しょさい",
+    "romaji": "shosai",
+    "meaning": "study; library; den; home office; reading room",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 書斎 when the context expresses study.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「書斎」についての記事を読みました。",
+        "english": "I read a news article about study."
+      },
+      {
+        "japanese": "「書斎」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 書斎 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-143",
+    "order": 143,
+    "word": "商売",
+    "reading": "しょうばい",
+    "romaji": "shoubai",
+    "meaning": "trade; business; commerce; transaction; occupation",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 商売 when the context expresses trade.",
+    "realLife": "Workplaces, formal messages, meetings, and schedules",
+    "examples": [
+      {
+        "japanese": "ニュースで「商売」についての記事を読みました。",
+        "english": "I read a news article about trade."
+      },
+      {
+        "japanese": "「商売」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 商売 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-144",
+    "order": 144,
+    "word": "奨学金",
+    "reading": "しょうがくきん",
+    "romaji": "shougakukin",
+    "meaning": "scholarship; stipend; student loan",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 奨学金 when the context expresses scholarship.",
+    "realLife": "Travel changes, public announcements, maps, tickets, and schedules",
+    "examples": [
+      {
+        "japanese": "ニュースで「奨学金」についての記事を読みました。",
+        "english": "I read a news article about scholarship."
+      },
+      {
+        "japanese": "「奨学金」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 奨学金 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-145",
+    "order": 145,
+    "word": "正午",
+    "reading": "しょうご",
+    "romaji": "shougo",
+    "meaning": "midday",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun",
+    "commonUsage": "Use 正午 when the context expresses midday.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「正午」という動詞が使われました。",
+        "english": "The verb “正午” (midday) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「正午」のか考えてください。",
+        "english": "Consider why someone would midday in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-146",
+    "order": 146,
+    "word": "商品",
+    "reading": "しょうひん",
+    "romaji": "shouhin",
+    "meaning": "commodity; article of commerce; goods; stock; merchandise",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 商品 when the context expresses commodity.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「商品」についての記事を読みました。",
+        "english": "I read a news article about commodity."
+      },
+      {
+        "japanese": "「商品」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 商品 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-147",
+    "order": 147,
+    "word": "少女",
+    "reading": "しょうじょ",
+    "romaji": "shoujo",
+    "meaning": "little girl; maiden; young lady",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 少女 when the context expresses little girl.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「少女」についての記事を読みました。",
+        "english": "I read a news article about little girl."
+      },
+      {
+        "japanese": "「少女」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 少女 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-148",
+    "order": 148,
+    "word": "証明",
+    "reading": "しょうめい",
+    "romaji": "shoumei",
+    "meaning": "proof; verification; certification",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 証明 when the context expresses proof.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「証明」という動詞が使われました。",
+        "english": "The verb “証明” (proof) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「証明」のか考えてください。",
+        "english": "Consider why someone would proof in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-149",
+    "order": 149,
+    "word": "少年",
+    "reading": "しょうねん",
+    "romaji": "shounen",
+    "meaning": "boy; juvenile; young boy; youth; lad",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 少年 when the context expresses boy.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「少年」についての記事を読みました。",
+        "english": "I read a news article about boy."
+      },
+      {
+        "japanese": "「少年」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 少年 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-150",
+    "order": 150,
+    "word": "少々",
+    "reading": "しょうしょう",
+    "romaji": "shoushou",
+    "meaning": "just a minute; small quantity",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun",
+    "commonUsage": "Use 少々 when the context expresses just a minute.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「少々」という動詞が使われました。",
+        "english": "The verb “少々” (just a minute) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「少々」のか考えてください。",
+        "english": "Consider why someone would just a minute in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-151",
+    "order": 151,
+    "word": "招待",
+    "reading": "しょうたい",
+    "romaji": "shoutai",
+    "meaning": "invitation",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 招待 when the context expresses invitation.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「招待」という動詞が使われました。",
+        "english": "The verb “招待” (invitation) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「招待」のか考えてください。",
+        "english": "Consider why someone would invitation in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-152",
+    "order": 152,
+    "word": "週",
+    "reading": "しゅう",
+    "romaji": "shuu",
+    "meaning": "week",
+    "level": "N3",
+    "type": "Noun, Suffix",
+    "commonUsage": "Use 週 when the context expresses week.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「週」についての記事を読みました。",
+        "english": "I read a news article about week."
+      },
+      {
+        "japanese": "「週」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 週 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-153",
+    "order": 153,
+    "word": "集中",
+    "reading": "しゅうちゅう",
+    "romaji": "shuuchuu",
+    "meaning": "concentration; focusing; centralization; integration",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 集中 when the context expresses concentration.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「集中」という動詞が使われました。",
+        "english": "The verb “集中” (concentration) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「集中」のか考えてください。",
+        "english": "Consider why someone would concentration in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-154",
+    "order": 154,
+    "word": "集団",
+    "reading": "しゅうだん",
+    "romaji": "shuudan",
+    "meaning": "group; mass",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 集団 when the context expresses group.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「集団」についての記事を読みました。",
+        "english": "I read a news article about group."
+      },
+      {
+        "japanese": "「集団」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 集団 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-155",
+    "order": 155,
+    "word": "収穫",
+    "reading": "しゅうかく",
+    "romaji": "shuukaku",
+    "meaning": "harvest; crop; fruits (of one's labors)",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 収穫 when the context expresses harvest.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「収穫」という動詞が使われました。",
+        "english": "The verb “収穫” (harvest) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「収穫」のか考えてください。",
+        "english": "Consider why someone would harvest in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-156",
+    "order": 156,
+    "word": "週間",
+    "reading": "しゅうかん",
+    "romaji": "shuukan",
+    "meaning": "week",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 週間 when the context expresses week.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「週間」についての記事を読みました。",
+        "english": "I read a news article about week."
+      },
+      {
+        "japanese": "「週間」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 週間 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-157",
+    "order": 157,
+    "word": "週刊",
+    "reading": "しゅうかん",
+    "romaji": "shuukan",
+    "meaning": "weekly publication",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 週刊 when the context expresses weekly publication.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「週刊」についての記事を読みました。",
+        "english": "I read a news article about weekly publication."
+      },
+      {
+        "japanese": "「週刊」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 週刊 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-158",
+    "order": 158,
+    "word": "収入",
+    "reading": "しゅうにゅう",
+    "romaji": "shuunyuu",
+    "meaning": "income; receipts; revenue; salary",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 収入 when the context expresses income.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「収入」についての記事を読みました。",
+        "english": "I read a news article about income."
+      },
+      {
+        "japanese": "「収入」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 収入 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-159",
+    "order": 159,
+    "word": "速度",
+    "reading": "そくど",
+    "romaji": "sokudo",
+    "meaning": "speed; velocity; pace; rate",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 速度 when the context expresses speed.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「速度」についての記事を読みました。",
+        "english": "I read a news article about speed."
+      },
+      {
+        "japanese": "「速度」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 速度 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-160",
+    "order": 160,
+    "word": "少しも",
+    "reading": "すこしも",
+    "romaji": "sukoshimo",
+    "meaning": "anything of; not one bit (with negative sentence)",
+    "level": "N3",
+    "type": "Adverb",
+    "commonUsage": "Use 少しも when the context expresses anything of.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「少しも」という動詞が使われました。",
+        "english": "The verb “少しも” (anything of) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「少しも」のか考えてください。",
+        "english": "Consider why someone would anything of in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-161",
+    "order": 161,
+    "word": "大半",
+    "reading": "たいはん",
+    "romaji": "taihan",
+    "meaning": "majority; more than half; most; largely; mainly",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun",
+    "commonUsage": "Use 大半 when the context expresses majority.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「大半」という動詞が使われました。",
+        "english": "The verb “大半” (majority) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「大半」のか考えてください。",
+        "english": "Consider why someone would majority in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-162",
+    "order": 162,
+    "word": "大会",
+    "reading": "たいかい",
+    "romaji": "taikai",
+    "meaning": "convention; rally; conference; tournament;",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 大会 when the context expresses convention.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「大会」についての記事を読みました。",
+        "english": "I read a news article about convention."
+      },
+      {
+        "japanese": "「大会」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 大会 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-163",
+    "order": 163,
+    "word": "大した",
+    "reading": "たいした",
+    "romaji": "taishita",
+    "meaning": "considerable; great; important; significant; a big deal",
+    "level": "N3",
+    "type": "Pre-noun adjectival",
+    "commonUsage": "Use 大した when the context expresses considerable.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「大した」についての記事を読みました。",
+        "english": "I read a news article about considerable."
+      },
+      {
+        "japanese": "「大した」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 大した from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-164",
+    "order": 164,
+    "word": "単なる",
+    "reading": "たんなる",
+    "romaji": "tannaru",
+    "meaning": "mere; simple; sheer",
+    "level": "N3",
+    "type": "Pre-noun adjectival",
+    "commonUsage": "Use 単なる when the context expresses mere.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「単なる」についての記事を読みました。",
+        "english": "I read a news article about mere."
+      },
+      {
+        "japanese": "「単なる」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 単なる from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-165",
+    "order": 165,
+    "word": "多少",
+    "reading": "たしょう",
+    "romaji": "tashou",
+    "meaning": "more or less; somewhat; a little; a few; some",
+    "level": "N3",
+    "type": "Noun, Adverb",
+    "commonUsage": "Use 多少 when the context expresses more or less.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「多少」という動詞が使われました。",
+        "english": "The verb “多少” (more or less) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「多少」のか考えてください。",
+        "english": "Consider why someone would more or less in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-166",
+    "order": 166,
+    "word": "手品",
+    "reading": "てじな",
+    "romaji": "tejina",
+    "meaning": "magic trick; illusion",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 手品 when the context expresses magic trick.",
+    "realLife": "Clinics, medicine instructions, health forms, and emergencies",
+    "examples": [
+      {
+        "japanese": "ニュースで「手品」についての記事を読みました。",
+        "english": "I read a news article about magic trick."
+      },
+      {
+        "japanese": "「手品」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 手品 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-167",
+    "order": 167,
+    "word": "哲学",
+    "reading": "てつがく",
+    "romaji": "tetsugaku",
+    "meaning": "philosophy",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 哲学 when the context expresses philosophy.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "ニュースで「哲学」についての記事を読みました。",
+        "english": "I read a news article about philosophy."
+      },
+      {
+        "japanese": "「哲学」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 哲学 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-168",
+    "order": 168,
+    "word": "徹夜",
+    "reading": "てつや",
+    "romaji": "tetsuya",
+    "meaning": "staying up all night",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 徹夜 when the context expresses staying up all night.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「徹夜」という動詞が使われました。",
+        "english": "The verb “徹夜” (staying up all night) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「徹夜」のか考えてください。",
+        "english": "Consider why someone would staying up all night in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-169",
+    "order": 169,
+    "word": "土地",
+    "reading": "とち",
+    "romaji": "tochi",
+    "meaning": "plot of land; lot; soil",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 土地 when the context expresses plot of land.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「土地」についての記事を読みました。",
+        "english": "I read a news article about plot of land."
+      },
+      {
+        "japanese": "「土地」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 土地 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-170",
+    "order": 170,
+    "word": "都会",
+    "reading": "とかい",
+    "romaji": "tokai",
+    "meaning": "(big) city",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 都会 when the context expresses (big) city.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「都会」についての記事を読みました。",
+        "english": "I read a news article about (big) city."
+      },
+      {
+        "japanese": "「都会」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 都会 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-171",
+    "order": 171,
+    "word": "取れる",
+    "reading": "とれる",
+    "romaji": "toreru",
+    "meaning": "to come off; to be removed; to be obtainable",
+    "level": "N3",
+    "type": "Verb, Ichidan verb, Intransitive verb, Transitive verb",
+    "commonUsage": "Use 取れる when the context expresses to come off.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「取れる」という動詞が使われました。",
+        "english": "The verb “取れる” (come off) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「取れる」のか考えてください。",
+        "english": "Consider why someone would come off in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-172",
+    "order": 172,
+    "word": "取り上げる",
+    "reading": "とりあげる",
+    "romaji": "toriageru",
+    "meaning": "to pick up",
+    "level": "N3",
+    "type": "Verb, Ichidan verb, Transitive verb",
+    "commonUsage": "Use 取り上げる when the context expresses to pick up.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「取り上げる」という動詞が使われました。",
+        "english": "The verb “取り上げる” (pick up) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「取り上げる」のか考えてください。",
+        "english": "Consider why someone would pick up in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-173",
+    "order": 173,
+    "word": "図書",
+    "reading": "としょ",
+    "romaji": "tosho",
+    "meaning": "books",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 図書 when the context expresses books.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「図書」についての記事を読みました。",
+        "english": "I read a news article about books."
+      },
+      {
+        "japanese": "「図書」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 図書 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-174",
+    "order": 174,
+    "word": "通学",
+    "reading": "つうがく",
+    "romaji": "tsuugaku",
+    "meaning": "commuting to school; school commute",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 通学 when the context expresses commuting to school.",
+    "realLife": "Classes, exams, applications, textbooks, and academic notices",
+    "examples": [
+      {
+        "japanese": "会話の中で「通学」という動詞が使われました。",
+        "english": "The verb “通学” (commuting to school) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「通学」のか考えてください。",
+        "english": "Consider why someone would commuting to school in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-175",
+    "order": 175,
+    "word": "受け取る",
+    "reading": "うけとる",
+    "romaji": "uketoru",
+    "meaning": "to receive; to understand",
+    "level": "N3",
+    "type": "Verb, Godan verb, Transitive verb",
+    "commonUsage": "Use 受け取る when the context expresses to receive.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「受け取る」という動詞が使われました。",
+        "english": "The verb “受け取る” (receive) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「受け取る」のか考えてください。",
+        "english": "Consider why someone would receive in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-176",
+    "order": 176,
+    "word": "上手い",
+    "reading": "うまい",
+    "romaji": "umai",
+    "meaning": "skillful; delicious",
+    "level": "N3",
+    "type": "Adjective, い-adjective",
+    "commonUsage": "Use 上手い when the context expresses skillful.",
+    "realLife": "Clinics, medicine instructions, health forms, and emergencies",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「上手い」と言えるか考えました。",
+        "english": "I read the explanation and considered when 上手い can be used."
+      },
+      {
+        "japanese": "写真の様子を「上手い」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 上手い."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-177",
+    "order": 177,
+    "word": "運転",
+    "reading": "うんてん",
+    "romaji": "unten",
+    "meaning": "operation; driving",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 運転 when the context expresses operation.",
+    "realLife": "Travel changes, public announcements, maps, tickets, and schedules",
+    "examples": [
+      {
+        "japanese": "会話の中で「運転」という動詞が使われました。",
+        "english": "The verb “運転” (operation) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「運転」のか考えてください。",
+        "english": "Consider why someone would operation in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-178",
+    "order": 178,
+    "word": "売れる",
+    "reading": "うれる",
+    "romaji": "ureru",
+    "meaning": "to sell (well)",
+    "level": "N3",
+    "type": "Verb, Ichidan verb, Intransitive verb",
+    "commonUsage": "Use 売れる when the context expresses to sell (well).",
+    "realLife": "Purchases, products, receipts, services, and consumer information",
+    "examples": [
+      {
+        "japanese": "会話の中で「売れる」という動詞が使われました。",
+        "english": "The verb “売れる” (sell (well)) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「売れる」のか考えてください。",
+        "english": "Consider why someone would sell (well) in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-179",
+    "order": 179,
+    "word": "分ける",
+    "reading": "わける",
+    "romaji": "wakeru",
+    "meaning": "to divide; to split; to part; to separate",
+    "level": "N3",
+    "type": "Verb, Ichidan verb, Transitive verb",
+    "commonUsage": "Use 分ける when the context expresses to divide.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「分ける」という動詞が使われました。",
+        "english": "The verb “分ける” (divide) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「分ける」のか考えてください。",
+        "english": "Consider why someone would divide in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-180",
+    "order": 180,
+    "word": "悪口",
+    "reading": "わるぐち",
+    "romaji": "waruguchi",
+    "meaning": "slander; bad-mouthing; abuse; insult; speaking ill (of)",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 悪口 when the context expresses slander.",
+    "realLife": "Clinics, medicine instructions, health forms, and emergencies",
+    "examples": [
+      {
+        "japanese": "会話の中で「悪口」という動詞が使われました。",
+        "english": "The verb “悪口” (slander) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「悪口」のか考えてください。",
+        "english": "Consider why someone would slander in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-181",
+    "order": 181,
+    "word": "夜明け",
+    "reading": "よあけ",
+    "romaji": "yoake",
+    "meaning": "dawn; daybreak",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 夜明け when the context expresses dawn.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「夜明け」についての記事を読みました。",
+        "english": "I read a news article about dawn."
+      },
+      {
+        "japanese": "「夜明け」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 夜明け from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-182",
+    "order": 182,
+    "word": "余分",
+    "reading": "よぶん",
+    "romaji": "yobun",
+    "meaning": "extra; excess; surplus",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 余分 when the context expresses extra.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「余分」についての記事を読みました。",
+        "english": "I read a news article about extra."
+      },
+      {
+        "japanese": "「余分」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 余分 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-183",
+    "order": 183,
+    "word": "読み",
+    "reading": "よみ",
+    "romaji": "yomi",
+    "meaning": "reading (of a kanji, situation, etc)",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 読み when the context expresses reading (of a kanji, situation, etc).",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「読み」についての記事を読みました。",
+        "english": "I read a news article about reading (of a kanji, situation, etc)."
+      },
+      {
+        "japanese": "「読み」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 読み from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-184",
+    "order": 184,
+    "word": "夜中",
+    "reading": "よなか",
+    "romaji": "yonaka",
+    "meaning": "middle of the night; dead of night",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun",
+    "commonUsage": "Use 夜中 when the context expresses middle of the night.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「夜中」という動詞が使われました。",
+        "english": "The verb “夜中” (middle of the night) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「夜中」のか考えてください。",
+        "english": "Consider why someone would middle of the night in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-185",
+    "order": 185,
+    "word": "宜しい",
+    "reading": "よろしい",
+    "romaji": "yoroshii",
+    "meaning": "(respectful) OK; all right",
+    "level": "N3",
+    "type": "Adjective, い-adjective",
+    "commonUsage": "Use 宜しい when the context expresses (respectful) ok.",
+    "realLife": "Everyday conversation, public information, articles, and exam-style sentences",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「宜しい」と言えるか考えました。",
+        "english": "I read the explanation and considered when 宜しい can be used."
+      },
+      {
+        "japanese": "写真の様子を「宜しい」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 宜しい."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-186",
+    "order": 186,
+    "word": "唯一",
+    "reading": "ゆいいつ",
+    "romaji": "yuiitsu",
+    "meaning": "only; sole; unique",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun",
+    "commonUsage": "Use 唯一 when the context expresses only.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「唯一」という動詞が使われました。",
+        "english": "The verb “唯一” (only) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「唯一」のか考えてください。",
+        "english": "Consider why someone would only in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-187",
+    "order": 187,
+    "word": "輸入",
+    "reading": "ゆにゅう",
+    "romaji": "yunyuu",
+    "meaning": "import; importation; introduction",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 輸入 when the context expresses import.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「輸入」という動詞が使われました。",
+        "english": "The verb “輸入” (import) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「輸入」のか考えてください。",
+        "english": "Consider why someone would import in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-188",
+    "order": 188,
+    "word": "輸出",
+    "reading": "ゆしゅつ",
+    "romaji": "yushutsu",
+    "meaning": "export; exportation​",
+    "level": "N3",
+    "type": "Noun, Verb, Suru verb",
+    "commonUsage": "Use 輸出 when the context expresses export.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「輸出」という動詞が使われました。",
+        "english": "The verb “輸出” (export) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「輸出」のか考えてください。",
+        "english": "Consider why someone would export in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-189",
+    "order": 189,
+    "word": "夕べ",
+    "reading": "ゆうべ",
+    "romaji": "yuube",
+    "meaning": "evening / last night; yesterday evening",
+    "level": "N3",
+    "type": "Noun, Adverbial Noun",
+    "commonUsage": "Use 夕べ when the context expresses evening / last night.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "会話の中で「夕べ」という動詞が使われました。",
+        "english": "The verb “夕べ” (evening / last night) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「夕べ」のか考えてください。",
+        "english": "Consider why someone would evening / last night in this situation."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-190",
+    "order": 190,
+    "word": "有利",
+    "reading": "ゆうり",
+    "romaji": "yuuri",
+    "meaning": "advantageous; favorable; profitable",
+    "level": "N3",
+    "type": "Noun, な-adjective",
+    "commonUsage": "Use 有利 when the context expresses advantageous.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "説明を読んで、どんな時に「有利」と言えるか考えました。",
+        "english": "I read the explanation and considered when 有利 can be used."
+      },
+      {
+        "japanese": "写真の様子を「有利」という言葉で説明しました。",
+        "english": "I described the scene in the photo with the word 有利."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-191",
+    "order": 191,
+    "word": "全国",
+    "reading": "ぜんこく",
+    "romaji": "zenkoku",
+    "meaning": "the whole country",
+    "level": "N3",
+    "type": "Noun",
+    "commonUsage": "Use 全国 when the context expresses the whole country.",
+    "realLife": "Everyday explanations, news, forms, messages, and JLPT-style texts",
+    "examples": [
+      {
+        "japanese": "ニュースで「全国」についての記事を読みました。",
+        "english": "I read a news article about the whole country."
+      },
+      {
+        "japanese": "「全国」の意味を、前後の文から考えてください。",
+        "english": "Work out the meaning of 全国 from the surrounding sentences."
+      }
+    ]
+  },
+  {
+    "id": "v-n3-192",
+    "order": 192,
+    "word": "随分",
+    "reading": "ずいぶん",
+    "romaji": "zuibun",
+    "meaning": "very; extremely; surprisingly; considerably; awfully",
+    "level": "N3",
+    "type": "Adjective, な-adjective, Adverb",
+    "commonUsage": "Use 随分 when the context expresses very.",
+    "realLife": "Natural actions, instructions, reports, plans, and requests",
+    "examples": [
+      {
+        "japanese": "会話の中で「随分」という動詞が使われました。",
+        "english": "The verb “随分” (very) was used in the conversation."
+      },
+      {
+        "japanese": "この場面で、なぜ「随分」のか考えてください。",
+        "english": "Consider why someone would very in this situation."
+      }
+    ]
+  }
+]

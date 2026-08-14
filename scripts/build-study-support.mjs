@@ -6,17 +6,15 @@ import { buildKanjiExamples } from '../src/data/kanjiExamples.js';
 import { vocabularyExampleOverrides } from '../src/data/vocabularyExamples.js';
 import { readings } from '../src/data/readings.js';
 
-const rawVocabulary = JSON.parse(
-  await readFile(new URL('../src/data/vocabulary.generated.json', import.meta.url)),
-);
-const grammar = JSON.parse(
-  await readFile(new URL('../src/data/grammar.generated.json', import.meta.url)),
-);
+const rawVocabulary = [
+  ...JSON.parse(await readFile(new URL('../src/data/vocabulary.generated.json', import.meta.url))),
+  ...JSON.parse(await readFile(new URL('../src/data/n3Vocabulary.generated.json', import.meta.url))),
+];
 const vocabulary = rawVocabulary.map((item) => ({
   ...item,
-  examples: vocabularyExampleOverrides[item.word]?.map(([japanese, english]) => ({ japanese, english }))
-    || item.examples,
+  examples: vocabularyExampleOverrides[item.word]?.map(([japanese, english]) => ({ japanese, english })) || item.examples,
 }));
+const grammar = JSON.parse(await readFile(new URL('../src/data/grammar.generated.json', import.meta.url)));
 
 const tokenizer = await new Promise((resolve, reject) => {
   kuromoji.builder({ dicPath: 'node_modules/kuromoji/dict' }).build((error, built) => {

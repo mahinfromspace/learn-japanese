@@ -5,8 +5,10 @@ import { readings } from '../src/data/readings.js';
 import { studySupport } from '../src/data/studySupport.generated.js';
 import { vocabularyExampleOverrides } from '../src/data/vocabularyExamples.js';
 
-const rawVocabulary = JSON.parse(await readFile(new URL('../src/data/vocabulary.generated.json', import.meta.url)));
-const vocabulary = rawVocabulary.map((item) => ({
+const vocabulary = [
+  ...JSON.parse(await readFile(new URL('../src/data/vocabulary.generated.json', import.meta.url))),
+  ...JSON.parse(await readFile(new URL('../src/data/n3Vocabulary.generated.json', import.meta.url))),
+].map((item) => ({
   ...item,
   examples: vocabularyExampleOverrides[item.word]?.map(([japanese, english]) => ({ japanese, english })) || item.examples,
 }));
@@ -26,11 +28,15 @@ const assertStudySupport = (text, label) => {
   assert(support?.[0] && support?.[1] && support?.[2], `Missing hiragana/romaji/meaning support for ${label}: ${text}`);
 };
 
-assert(kanji.length === 167, `Expected 167 kanji, found ${kanji.length}`);
-assert(vocabulary.length === 571, `Expected 571 vocabulary entries, found ${vocabulary.length}`);
+assert(kanji.filter((item) => item.level === 'N4').length === 167, 'N4 kanji count changed');
+assert(kanji.filter((item) => item.level === 'N3').length === 370, 'N3 kanji count changed');
+assert(vocabulary.filter((item) => item.level === 'N4').length === 571, 'N4 vocabulary count changed');
+assert(vocabulary.filter((item) => item.level === 'N3').length === 192, 'N3 vocabulary count changed');
 assert(grammar.filter((item) => item.level === 'N5').length === 84, 'N5 grammar count changed');
 assert(grammar.filter((item) => item.level === 'N4').length === 132, 'N4 grammar count changed');
-assert(readings.length === 81, `Expected 81 readings, found ${readings.length}`);
+assert(grammar.filter((item) => item.level === 'N3').length === 182, 'N3 grammar count changed');
+assert(readings.filter((item) => item.level === 'N4').length === 81, 'N4 reading count changed');
+assert(readings.filter((item) => item.level === 'N3').length === 15, 'N3 reading count changed');
 
 uniqueIds(kanji, 'Kanji');
 uniqueIds(vocabulary, 'Vocabulary');
@@ -47,7 +53,7 @@ for (const item of vocabulary) {
 for (const item of kanji) {
   const linkedWords = vocabulary.filter((word) => word.word.includes(item.character));
   const examples = buildKanjiExamples(item, linkedWords);
-  assert(examples.length >= 10, `Kanji lacks 10 examples: ${item.character}`);
+  assert(examples.length >= (item.level === 'N4' ? 10 : 1), `Kanji lacks examples: ${item.character}`);
   assert(examples.every((example) => example.japanese && example.english && example.readingType), `Incomplete kanji example: ${item.character}`);
   assertStudySupport(item.word, `kanji word ${item.character}`);
   for (const example of examples) {

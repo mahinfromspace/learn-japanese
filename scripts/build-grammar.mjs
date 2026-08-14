@@ -3,6 +3,7 @@ import { writeFile } from 'node:fs/promises';
 const configs = [
   { level: 'N5', pages: 3, base: 'https://jlptsensei.com/jlpt-n5-grammar-list/' },
   { level: 'N4', pages: 4, base: 'https://jlptsensei.com/jlpt-n4-grammar-list/' },
+  { level: 'N3', pages: 5, base: 'https://jlptsensei.com/jlpt-n3-grammar-list/' },
 ];
 
 const decode = (value = '') =>
@@ -171,8 +172,8 @@ for (const config of configs) {
 }
 
 const counts = Object.groupBy(grammar, (item) => item.level);
-if ((counts.N4?.length || 0) < 120 || (counts.N5?.length || 0) < 70) {
-  throw new Error(`Incomplete grammar data: N5 ${counts.N5?.length}, N4 ${counts.N4?.length}`);
+if ((counts.N4?.length || 0) < 120 || (counts.N5?.length || 0) < 70 || (counts.N3?.length || 0) < 170) {
+  throw new Error(`Incomplete grammar data: N5 ${counts.N5?.length}, N4 ${counts.N4?.length}, N3 ${counts.N3?.length}`);
 }
 
 await writeFile(
@@ -180,4 +181,4 @@ await writeFile(
   `${JSON.stringify(grammar, null, 2)}\n`,
 );
 
-console.log(`Wrote ${counts.N5.length} N5 and ${counts.N4.length} N4 grammar points.`);
+console.log(`Wrote ${counts.N5.length} N5, ${counts.N4.length} N4, and ${counts.N3.length} N3 grammar points.`);

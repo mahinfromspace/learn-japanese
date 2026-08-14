@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import { GateQuiz } from './components/GateQuiz';
 import { Layout } from './components/Layout';
 import { AuthProvider, useAuth } from './state/AuthContext';
 import { StudyProvider } from './state/StudyContext';
@@ -13,6 +12,8 @@ import { LibraryPage } from './pages/LibraryPage';
 import { TestPage } from './pages/TestPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { LoginPage } from './pages/LoginPage';
+import { CustomStudyPage } from './pages/CustomStudyPage';
+import { ProfilePage } from './pages/ProfilePage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,12 +41,13 @@ function StudyApp() {
           <Route path="/reading" element={<ReadingPage />} />
           <Route path="/reading/:id" element={<ReadingDetail />} />
           <Route path="/test" element={<TestPage />} />
+          <Route path="/custom-study" element={<CustomStudyPage />} />
           <Route path="/library" element={<LibraryPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>
-      <GateQuiz />
     </StudyProvider>
   );
 }

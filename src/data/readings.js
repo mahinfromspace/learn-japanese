@@ -1,5 +1,6 @@
 import { readingRomaji } from './readingRomaji.generated.js';
 import { additionalReadings } from './additionalReadings.js';
+import { n3Readings } from './n3Readings.js';
 
 const names = [
   ['田中さん', 'Tanaka'], ['山田さん', 'Yamada'], ['木村さん', 'Kimura'], ['佐藤さん', 'Sato'],
@@ -223,7 +224,7 @@ const rotateAnswers = (question, seed) => {
   };
 };
 
-export const readings = [
+const n4Readings = [
   ...workPassages,
   ...trainPassages,
   ...invitationPassages,
@@ -240,5 +241,16 @@ export const readings = [
   level: 'N4',
   romaji: readingRomaji[passage.id] || '',
 }));
+
+export const readings = [
+  ...n4Readings,
+  ...n3Readings.map((passage, index) => ({
+    ...passage,
+    questions: passage.questions.map((question, questionIndex) => rotateAnswers(question, index + questionIndex + 97)),
+    order: index + 1,
+    level: 'N3',
+    romaji: readingRomaji[passage.id] || passage.romaji || '',
+  })),
+];
 
 export const readingById = Object.fromEntries(readings.map((passage) => [passage.id, passage]));

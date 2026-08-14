@@ -1,7 +1,7 @@
 {
-  "name": "n4-daily-study",
+  "name": "japanese-for-today",
   "private": true,
-  "version": "3.0.0",
+  "version": "4.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
@@ -12,6 +12,7 @@
     "test": "node scripts/validate-data.mjs",
     "test:browser": "node scripts/browser-check.mjs",
     "data:vocabulary": "node scripts/build-vocab.mjs",
+    "data:vocabulary:n3": "node scripts/build-n3-vocab.mjs",
     "data:grammar": "node scripts/build-grammar.mjs",
     "data:romaji": "node scripts/build-reading-romaji.mjs",
     "data:support": "node scripts/build-study-support.mjs"

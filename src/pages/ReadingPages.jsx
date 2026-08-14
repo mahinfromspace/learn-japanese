@@ -6,16 +6,21 @@ import { RevealStudyAids, StudyAidLines } from '../components/StudyReveal';
 import { useStudy } from '../state/StudyContext';
 
 export function ReadingPage() {
-  const { content, progress } = useStudy();
+  const { activeLevel } = useStudy();
+  return <ReadingCatalog key={activeLevel} />;
+}
+
+function ReadingCatalog() {
+  const { levelContent, activeLevel, progress } = useStudy();
   const [tab, setTab] = useState('passages');
   const [type, setType] = useState('All');
   const [query, setQuery] = useState('');
-  const types = ['All', ...new Set(content.reading.map((item) => item.type))];
-  const filtered = content.reading.filter((item) => type === 'All' || item.type === type);
-  const sentences = useMemo(() => content.vocabulary.flatMap((word) => word.examples.map((example, index) => ({ ...example, word, id: `${word.id}-${index}` }))).filter((item) => `${item.japanese} ${item.english} ${item.word.word}`.toLowerCase().includes(query.toLowerCase())), [content.vocabulary, query]);
+  const types = ['All', ...new Set(levelContent.reading.map((item) => item.type))];
+  const filtered = levelContent.reading.filter((item) => type === 'All' || item.type === type);
+  const sentences = useMemo(() => levelContent.vocabulary.flatMap((word) => word.examples.map((example, index) => ({ ...example, word, id: `${word.id}-${index}` }))).filter((item) => `${item.japanese} ${item.english} ${item.word.word}`.toLowerCase().includes(query.toLowerCase())), [levelContent.vocabulary, query]);
   return (
     <div className="page">
-      <header className="page-heading"><p className="eyebrow">READING LAB · {content.reading.length} PASSAGES</p><h1>Read first. Reveal later.</h1><p>Original N4 practice across messages, notices, schedules, conversations, and information retrieval.</p></header>
+      <header className="page-heading"><p className="eyebrow">{activeLevel} READING LAB · {levelContent.reading.length} PASSAGES</p><h1>Read first. Reveal later.</h1><p>{activeLevel === 'N3' ? 'Exam-style decisions drawn from forms, notices, service terms, work, travel, and daily incidents.' : 'Practice across messages, notices, schedules, conversations, and information retrieval.'}</p></header>
       <div className="segmented"><button className={tab === 'passages' ? 'active' : ''} type="button" onClick={() => setTab('passages')}><BookMarked /> Passages</button><button className={tab === 'sentences' ? 'active' : ''} type="button" onClick={() => setTab('sentences')}><Languages /> Sample sentences</button></div>
       {tab === 'passages' ? <>
         <div className="filter-scroll">{types.map((item) => <button className={type === item ? 'active' : ''} type="button" key={item} onClick={() => setType(item)}>{item}</button>)}</div>
@@ -49,7 +54,6 @@ export function ReadingDetail() {
   const submit = () => { setSubmitted(true); recordReading(id, score, passage.questions.length); };
   return (
     <div className="page reading-detail-page">
-      <Link className="text-link back-link" to="/reading">← All passages</Link>
       <header className="page-heading compact"><p className="eyebrow">{passage.type} · {passage.difficulty}</p><h1><LinkedJapanese>{passage.title}</LinkedJapanese></h1><RevealStudyAids compact showJapanese={false} japanese={passage.title} label="Reveal title reading" /><div className="reading-meta"><span><Clock3 />{passage.minutes} min</span>{result && <span><Check />Best: {result.score}/{result.total}</span>}</div></header>
       <section className="passage-paper">
         <div className="paper-tools"><span>Japanese text</span><div><button className="icon-text-button" type="button" onClick={speak}><Volume2 /> Listen</button></div></div>

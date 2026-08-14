@@ -1,10 +1,9 @@
 /* eslint-disable react-refresh/only-export-components */
 import { useMemo, useState } from 'react';
-import { Check, ChevronRight, Eye, EyeOff, RotateCcw, X } from 'lucide-react';
+import { Check, ChevronRight, RotateCcw, X } from 'lucide-react';
 import { LinkedJapanese } from './LinkedJapanese';
 import { StudyAidLines } from './StudyReveal';
 import {
-  containsKanji,
   kanjiReadingSupport,
   normalizeToHiragana,
 } from '../lib/studySupport';
@@ -36,11 +35,11 @@ const optionSet = (correct, pool, field, seed, transform = (value) => value) => 
   return seededShuffle([{ value: correctValue, item: correct }, ...wrong], `${seed}-options`);
 };
 
-const wordAid = (item, readingField = 'reading') => ({
+const wordAid = (item, readingField = 'reading', includeMeaning = false) => ({
   japanese: item.word,
   hiragana: normalizeToHiragana(item[readingField] || item.reading || item.wordReading),
   romaji: item.romaji,
-  meaning: item.meaning || item.wordMeaning,
+  meaning: includeMeaning ? item.meaning || item.wordMeaning : '',
 });
 
 const grammarAid = (item, japanese) => ({
@@ -80,9 +79,7 @@ const withAids = (area, field, options) => options.map((entry) => ({
 
 export const buildQuestions = (area, items, fullPool, seed, limit = 10) => seededShuffle(items, seed).slice(0, limit).map((item, index) => {
   const initialMode = (hash(`${seed}-${index}`) + index) % 3;
-  const mode = area === 'vocabulary' && initialMode === 1 && !containsKanji(item.word)
-    ? 2
-    : initialMode;
+  const mode = area === 'vocabulary' ? initialMode % 2 : initialMode;
   const questionSeed = `${seed}-${index}`;
   if (area === 'kanji') {
     if (mode === 0) {
@@ -129,25 +126,10 @@ export const buildQuestions = (area, items, fullPool, seed, limit = 10) => seede
         prompt: 'What does this word mean?',
         focus: item.word,
         focusAid: wordAid(item),
+        alwaysAid: true,
         answer: item.meaning,
         options: withAids('vocabulary', 'meaning', optionSet(item, fullPool, 'meaning', questionSeed)),
         detail: `${normalizeToHiragana(item.reading)} · ${item.romaji} · ${item.type}`,
-      };
-    }
-    if (mode === 1) {
-      const answer = normalizeToHiragana(item.reading);
-      return {
-        id: `${item.id}-reading`,
-        prompt: 'What is the hiragana reading of this word?',
-        focus: item.word,
-        focusAid: wordAid(item),
-        answer,
-        options: withAids(
-          'vocabulary',
-          'reading',
-          optionSet(item, fullPool, 'reading', questionSeed, normalizeToHiragana),
-        ),
-        detail: `${item.word} (${answer}) means ${item.meaning}.`,
       };
     }
     return {
@@ -155,6 +137,7 @@ export const buildQuestions = (area, items, fullPool, seed, limit = 10) => seede
       prompt: `Choose the Japanese word meaning “${item.meaning}”.`,
       answer: item.word,
       options: withAids('vocabulary', 'word', optionSet(item, fullPool, 'word', questionSeed)),
+      showOptionAids: true,
       detail: `${item.word} (${normalizeToHiragana(item.reading)}) · ${item.romaji}`,
     };
   }
@@ -195,7 +178,6 @@ export function QuizRunner({ area, items, pool, seed, limit = 10, onFinish, onRe
   const [selected, setSelected] = useState('');
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
-  const [helpOpen, setHelpOpen] = useState(false);
   const question = questions[index];
 
   if (!questions.length) return <div className="empty-state"><RotateCcw /><h3>No quiz material yet</h3><p>Study at least one item, then return for a mixed review.</p></div>;
@@ -204,7 +186,7 @@ export function QuizRunner({ area, items, pool, seed, limit = 10, onFinish, onRe
       <span className="result-score">{score}/{questions.length}</span>
       <h2>{score === questions.length ? 'Perfect run' : score >= questions.length * 0.7 ? 'Solid review' : 'A useful first pass'}</h2>
       <p>{score >= questions.length * 0.7 ? 'Your recall is holding. The next test will rotate question styles.' : 'Missed items stay in the review pool, so this result is useful data.'}</p>
-      <button className="button primary" type="button" onClick={() => { if (onRestart) onRestart(); else { setIndex(0); setSelected(''); setScore(0); setFinished(false); setHelpOpen(false); } }}>Try another format <RotateCcw /></button>
+      <button className="button primary" type="button" onClick={() => { if (onRestart) onRestart(); else { setIndex(0); setSelected(''); setScore(0); setFinished(false); } }}>Try another format <RotateCcw /></button>
     </section>
   );
 
@@ -221,11 +203,8 @@ export function QuizRunner({ area, items, pool, seed, limit = 10, onFinish, onRe
     } else {
       setIndex((value) => value + 1);
       setSelected('');
-      setHelpOpen(false);
     }
   };
-
-  const helpAvailable = Boolean(question.focusAid || question.options.some((option) => option.aid));
 
   return (
     <section className="quiz-panel">
@@ -233,13 +212,7 @@ export function QuizRunner({ area, items, pool, seed, limit = 10, onFinish, onRe
       <div className="quiz-progress"><span style={{ width: `${((index + 1) / questions.length) * 100}%` }} /></div>
       <h2><LinkedJapanese>{question.prompt}</LinkedJapanese></h2>
       {question.focus && <div className="quiz-focus"><LinkedJapanese>{question.focus}</LinkedJapanese></div>}
-      {helpAvailable && (
-        <button className="quiz-study-toggle" type="button" aria-expanded={helpOpen} onClick={() => setHelpOpen((value) => !value)}>
-          {helpOpen ? <EyeOff /> : <Eye />}
-          {helpOpen ? 'Hide reading help' : 'Reveal hiragana, romaji & meaning'}
-        </button>
-      )}
-      {helpOpen && question.focusAid && <StudyAidLines className="quiz-focus-aids" {...question.focusAid} />}
+      {question.alwaysAid && question.focusAid && <StudyAidLines className="quiz-focus-aids always-visible" {...question.focusAid} />}
       <div className="quiz-options">
         {question.options.map((option) => {
           const state = selected ? option.value === question.answer ? 'correct' : option.value === selected ? 'wrong' : 'muted' : '';
@@ -247,7 +220,7 @@ export function QuizRunner({ area, items, pool, seed, limit = 10, onFinish, onRe
             <button type="button" className={state} key={option.value} onClick={() => choose(option.value)}>
               <span className="quiz-option-copy">
                 <LinkedJapanese>{option.value}</LinkedJapanese>
-                {helpOpen && option.aid && <StudyAidLines compact {...option.aid} />}
+                {question.showOptionAids && option.aid && <StudyAidLines compact {...option.aid} />}
               </span>
               {state === 'correct' && <Check />}
               {state === 'wrong' && <X />}

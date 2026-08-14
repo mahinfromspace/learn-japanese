@@ -1,3 +1,5 @@
+import { n3Kanji } from './n3Kanji.generated.js';
+
 const raw = `
 会|カイ|あう|meeting; meet|会う|あう|to meet
 同|ドウ|おなじ|same; equal|同じ|おなじ|same
@@ -168,7 +170,7 @@ const raw = `
 漢|カン|なし|China; Chinese|漢字|かんじ|kanji
 `
 
-export const kanji = raw.trim().split('\n').map((line, index) => {
+const n4Kanji = raw.trim().split('\n').map((line, index) => {
   const [character, onyomi, kunyomi, meaning, word, wordReading, wordMeaning] = line.split('|')
   return {
     id: `k-${String(index + 1).padStart(3, '0')}`,
@@ -185,6 +187,13 @@ export const kanji = raw.trim().split('\n').map((line, index) => {
   }
 })
 
+export const kanji = [...n4Kanji, ...n3Kanji];
+
 export const kanjiList = kanji
 export const kanjiById = Object.fromEntries(kanji.map((item) => [item.id, item]))
 export const kanjiByCharacter = Object.fromEntries(kanji.map((item) => [item.character, item]))
+
+export const findKanji = (character, level) => (
+  kanji.find((item) => item.character === character && item.level === level)
+  || kanji.find((item) => item.character === character)
+);

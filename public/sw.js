@@ -1,4 +1,4 @@
-const CACHE = 'n4-daily-v4-study-aids'
+const CACHE = 'japanese-for-today-v5'
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(['/', '/index.html'])))

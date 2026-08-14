@@ -1,12 +1,18 @@
 import { Archive, CalendarRange, Check, Download, FileUp, Pencil, Plus, RotateCcw, Save, Search, ShieldCheck, Trash2 } from 'lucide-react';
 import { useMemo, useRef, useState } from 'react';
+import { LevelSwitch } from '../components/LevelSwitch';
 import { useStudy } from '../state/StudyContext';
 
 const areaLabels = { kanji: 'Kanji', vocabulary: 'Vocabulary', grammar: 'Grammar', reading: 'Reading' };
 
 export function SettingsPage() {
+  const { activeLevel } = useStudy();
+  return <SettingsContent key={activeLevel} />;
+}
+
+function SettingsContent() {
   const {
-    progress, content, updateSettings, editContent, addContent, archiveContent, resetItems,
+    progress, content, levelContent, activeLevel, updateSettings, editContent, addContent, archiveContent, resetItems,
     resetAll, resetTestHistory, importProgress, replaceOfficialKanji, setCompletedKanjiDays,
   } = useStudy();
   const [area, setArea] = useState('kanji');
@@ -17,11 +23,12 @@ export function SettingsPage() {
   const selected = content[area].find((item) => item.id === selectedId);
   const resetCandidates = useMemo(() => area === 'kanji' ? [...new Set([...progress.kanji.official, ...progress.kanji.extra])] : area === 'reading' ? Object.keys(progress.reading.completed) : progress[area].learned, [area, progress]);
   const [resetSelection, setResetSelection] = useState([]);
-  const totalKanjiDays = Math.ceil(content.kanji.length / progress.settings.kanjiDaily);
-  const [studyDay, setStudyDay] = useState(Math.min(totalKanjiDays, Math.floor(progress.kanji.official.length / progress.settings.kanjiDaily) + 1));
+  const totalKanjiDays = Math.max(1, Math.ceil(levelContent.kanji.length / progress.settings.kanjiDaily));
+  const learnedLevelKanji = levelContent.kanji.filter((item) => progress.kanji.official.includes(item.id));
+  const [studyDay, setStudyDay] = useState(Math.min(totalKanjiDays, Math.floor(learnedLevelKanji.length / progress.settings.kanjiDaily) + 1));
   const [kanjiQuery, setKanjiQuery] = useState('');
-  const [officialSelection, setOfficialSelection] = useState(progress.kanji.official);
-  const visibleKanji = content.kanji.filter((item) => `${item.character} ${item.meaning} ${item.onyomi} ${item.kunyomi}`.toLowerCase().includes(kanjiQuery.toLowerCase()));
+  const [officialSelection, setOfficialSelection] = useState(learnedLevelKanji.map((item) => item.id));
+  const visibleKanji = levelContent.kanji.filter((item) => `${item.character} ${item.meaning} ${item.onyomi} ${item.kunyomi}`.toLowerCase().includes(kanjiQuery.toLowerCase()));
 
   const changeArea = (nextArea) => {
     const first = content[nextArea][0];
@@ -50,10 +57,10 @@ export function SettingsPage() {
   const startNew = () => {
     const id = `custom-${area}-${Date.now()}`;
     const templates = {
-      kanji: { id, character: '', onyomi: '', kunyomi: '', meaning: '', word: '', wordReading: '', wordMeaning: '', level: 'N4', order: content.kanji.length + 1 },
-      vocabulary: { id, word: '', reading: '', romaji: '', meaning: '', level: 'N4', type: 'Noun', commonUsage: '', realLife: '', examples: [] },
-      grammar: { id, pattern: '', romaji: '', meaning: '', level: 'N4', structure: '', explanation: '', register: '', commonMistake: '', comparison: '', examples: [] },
-      reading: { id, title: '', type: 'Custom', difficulty: 'Standard', minutes: 3, japanese: '', translation: '', grammar: [], vocabulary: [], questions: [], level: 'N4' },
+      kanji: { id, character: '', onyomi: '', kunyomi: '', meaning: '', word: '', wordReading: '', wordMeaning: '', level: activeLevel, order: content.kanji.length + 1 },
+      vocabulary: { id, word: '', reading: '', romaji: '', meaning: '', level: activeLevel, type: 'Noun', commonUsage: '', realLife: '', examples: [] },
+      grammar: { id, pattern: '', romaji: '', meaning: '', level: activeLevel, structure: '', explanation: '', register: '', commonMistake: '', comparison: '', examples: [] },
+      reading: { id, title: '', type: 'Custom', difficulty: 'Standard', minutes: 3, japanese: '', translation: '', grammar: [], vocabulary: [], questions: [], level: activeLevel },
     };
     setSelectedId('');
     setJson(JSON.stringify(templates[area], null, 2));
@@ -63,7 +70,7 @@ export function SettingsPage() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `n4-daily-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    link.download = `japanese-for-today-backup-${new Date().toISOString().slice(0, 10)}.json`;
     link.click();
     URL.revokeObjectURL(url);
   };
@@ -79,16 +86,16 @@ export function SettingsPage() {
     <div className="page settings-page">
       <header className="page-heading"><p className="eyebrow">SETTINGS + DATA STUDIO</p><h1>Your app, your rules.</h1><p>Adjust the pace, repair progress, and edit every catalog as structured local data.</p></header>
       {message && <div className="toast" role="status">{message}</div>}
-      <section className="section-block"><div className="section-heading"><div><p className="eyebrow">DAILY PACE</p><h2>Learning limits</h2></div><ShieldCheck /></div><div className="setting-grid"><NumberSetting label="Kanji per day" value={progress.settings.kanjiDaily} min={1} max={20} onChange={(kanjiDaily) => updateSettings({ kanjiDaily })} /><NumberSetting label="Vocabulary per day" value={progress.settings.vocabularyDaily} min={5} max={60} onChange={(vocabularyDaily) => updateSettings({ vocabularyDaily })} /><NumberSetting label="Grammar per day" value={progress.settings.grammarDaily} min={1} max={20} onChange={(grammarDaily) => updateSettings({ grammarDaily })} /></div><label className="toggle-row"><span><strong>Return-time quick quiz</strong><small>One blocking recall question in each new four-hour window.</small></span><input type="checkbox" checked={progress.settings.gateQuiz} onChange={(event) => updateSettings({ gateQuiz: event.target.checked })} /></label></section>
+      <section className="section-block"><div className="section-heading"><div><p className="eyebrow">LEVEL + DAILY PACE</p><h2>Study as much as you choose.</h2></div><ShieldCheck /></div><div className="settings-level-row"><span><strong>Active course</strong><small>Every daily area and test follows this level.</small></span><LevelSwitch /></div><div className="setting-grid"><NumberSetting label="Kanji per day" value={progress.settings.kanjiDaily} min={1} max={levelContent.kanji.length} onChange={(kanjiDaily) => updateSettings({ kanjiDaily })} /><NumberSetting label="Vocabulary per day" value={progress.settings.vocabularyDaily} min={1} max={levelContent.vocabulary.length} onChange={(vocabularyDaily) => updateSettings({ vocabularyDaily })} /><NumberSetting label="Grammar per day" value={progress.settings.grammarDaily} min={1} max={levelContent.grammar.length} onChange={(grammarDaily) => updateSettings({ grammarDaily })} /></div><p className="fine-print">There is no preset daily cap. Increase any field up to the complete {activeLevel} catalog; today’s session refreshes immediately.</p></section>
 
       <section className="section-block progress-repair">
-        <div className="section-heading"><div><p className="eyebrow">RESTORE YOUR PLACE</p><h2>Choose your study day and learned kanji</h2></div><CalendarRange /></div>
+        <div className="section-heading"><div><p className="eyebrow">RESTORE YOUR {activeLevel} PLACE</p><h2>Choose your study day and learned kanji</h2></div><CalendarRange /></div>
         <div className="study-day-control">
           <label><span>Current official day</span><input type="number" min={1} max={totalKanjiDays} value={studyDay} onChange={(event) => setStudyDay(Math.min(totalKanjiDays, Math.max(1, Number(event.target.value) || 1)))} /></label>
-          <div><strong>Day {studyDay} of {totalKanjiDays}</strong><p>Applying this marks all earlier daily sets as learned and makes this day’s chronological set your “Today’s five.”</p></div>
+          <div><strong>Day {studyDay} of {totalKanjiDays}</strong><p>Applying this marks earlier adjustable daily sets as learned and makes this day’s chronological set today’s study queue.</p></div>
           <button className="button primary" type="button" onClick={() => {
             setCompletedKanjiDays(studyDay - 1);
-            const selected = content.kanji.slice(0, (studyDay - 1) * progress.settings.kanjiDaily).map((item) => item.id);
+            const selected = levelContent.kanji.slice(0, (studyDay - 1) * progress.settings.kanjiDaily).map((item) => item.id);
             setOfficialSelection(selected);
             notify(`Official progress moved to day ${studyDay}.`);
           }}>Apply day</button>
@@ -105,7 +112,7 @@ export function SettingsPage() {
         </div>
         <div className="button-row">
           <button className="button primary" type="button" onClick={() => { replaceOfficialKanji(officialSelection); notify('Official learned-kanji selection saved.'); }}><Save /> Save learned selection</button>
-          <button className="button secondary" type="button" onClick={() => setOfficialSelection(progress.kanji.official)}>Undo unsaved changes</button>
+          <button className="button secondary" type="button" onClick={() => setOfficialSelection(levelContent.kanji.filter((item) => progress.kanji.official.includes(item.id)).map((item) => item.id))}>Undo unsaved changes</button>
           <button className="button danger-quiet" type="button" onClick={() => setOfficialSelection([])}>Clear selection</button>
         </div>
       </section>
