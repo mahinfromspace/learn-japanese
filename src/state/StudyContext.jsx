@@ -1,6 +1,163 @@
+/* eslint-disable react-refresh/only-export-components */
+import { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import { kanji } from '../data/kanji';
+import { vocabulary } from '../data/vocabulary';
+import { grammar } from '../data/grammar';
+import { readings } from '../data/readings';
+import { calculateOverallScore } from '../lib/score';
+import { supabase } from '../lib/supabase';
+import { useAuth } from './AuthContext';
 
-    
-  
+const LEGACY_STORAGE_KEY = 'n4-daily-study-v2';
+const storageKeyFor = (userId) => `n4-daily-study-v3:${userId}`;
+
+const todayKey = (date = new Date()) => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+const makeDefaultProgress = () => ({
+  version: 3,
+  profile: { startedAt: new Date().toISOString() },
+  settings: { kanjiDaily: 5, vocabularyDaily: 20, grammarDaily: 5, romaji: true, activeLevel: 'N4' },
+  kanji: { official: [], extra: [], srs: {} },
+  vocabulary: { learned: [], srs: {} },
+  grammar: { learned: [], srs: {} },
+  reading: { completed: {} },
+  sessions: {},
+  stats: { correct: 0, answered: 0, studyMinutes: 0 },
+  quizAttempts: {},
+  overrides: { kanji: {}, vocabulary: {}, grammar: {}, reading: {} },
+  custom: { kanji: [], vocabulary: [], grammar: [], reading: [] },
+  archived: { kanji: [], vocabulary: [], grammar: [], reading: [] },
+});
+
+const mergeProgress = (saved = {}) => {
+  const defaults = makeDefaultProgress();
+  return {
+    ...defaults,
+    ...saved,
+    version: 3,
+    profile: { ...defaults.profile, ...saved.profile },
+    settings: { ...defaults.settings, ...saved.settings, activeLevel: saved.settings?.activeLevel || 'N4' },
+    kanji: { ...defaults.kanji, ...saved.kanji },
+    vocabulary: { ...defaults.vocabulary, ...saved.vocabulary },
+    grammar: { ...defaults.grammar, ...saved.grammar },
+    reading: { ...defaults.reading, ...saved.reading },
+    sessions: { ...defaults.sessions, ...saved.sessions },
+    stats: { ...defaults.stats, ...saved.stats },
+    overrides: { ...defaults.overrides, ...saved.overrides },
+    custom: { ...defaults.custom, ...saved.custom },
+    archived: { ...defaults.archived, ...saved.archived },
+  };
+};
+
+const loadProgress = (userId) => {
+  try {
+    const raw = localStorage.getItem(storageKeyFor(userId)) || localStorage.getItem(LEGACY_STORAGE_KEY);
+    return mergeProgress(raw ? JSON.parse(raw) : {});
+  } catch {
+    return makeDefaultProgress();
+  }
+};
+
+const dueDate = (days) => {
+  const date = new Date();
+  date.setHours(23, 59, 59, 999);
+  date.setDate(date.getDate() + days);
+  return date.toISOString();
+};
+
+const updateSrsRecord = (previous = {}, known) => {
+  const streak = known ? (previous.streak || 0) + 1 : 0;
+  const interval = known ? [1, 3, 7, 14, 30, 60][Math.min(streak - 1, 5)] : 0;
+  return {
+    seen: (previous.seen || 0) + 1,
+    correct: (previous.correct || 0) + (known ? 1 : 0),
+    streak,
+    interval,
+    due: dueDate(interval),
+    lastReviewed: new Date().toISOString(),
+  };
+};
+
+const itemsForLevel = (catalog, area, level) => catalog.filter((item) => (
+  area === 'grammar' && level === 'N4' ? item.level === 'N5' || item.level === 'N4' : item.level === level
+));
+const sessionKey = (date, level) => `${date}:${level}`;
+
+const createSession = (progress, level) => {
+  const learnedKanji = new Set([...(progress.kanji.official || []), ...(progress.kanji.extra || [])]);
+  const learnedVocabulary = new Set(progress.vocabulary.learned || []);
+  const learnedGrammar = new Set(progress.grammar.learned || []);
+  return {
+    level,
+    kanjiIds: itemsForLevel(kanji, 'kanji', level).filter((item) => !learnedKanji.has(item.id)).slice(0, progress.settings.kanjiDaily).map((item) => item.id),
+    vocabularyIds: itemsForLevel(vocabulary, 'vocabulary', level).filter((item) => !learnedVocabulary.has(item.id)).slice(0, progress.settings.vocabularyDaily).map((item) => item.id),
+    grammarIds: itemsForLevel(grammar, 'grammar', level).filter((item) => !learnedGrammar.has(item.id)).slice(0, progress.settings.grammarDaily).map((item) => item.id),
+    createdAt: new Date().toISOString(),
+  };
+};
+
+const ensureTodaySession = (progress, date) => {
+  const level = progress.settings.activeLevel || 'N4';
+  const key = sessionKey(date, level);
+  if (progress.sessions[key]) return progress;
+  const legacy = level === 'N4' ? progress.sessions[date] : null;
+  return { ...progress, sessions: { ...progress.sessions, [key]: legacy ? { ...legacy, level } : createSession(progress, level) } };
+};
+
+const applyOverride = (items, overrides, custom, archived) => [
+  ...items.map((item) => ({ ...item, ...(overrides[item.id] || {}) })),
+  ...custom,
+].filter((item) => !archived.includes(item.id));
+
+const StudyContext = createContext(null);
+
+export function StudyProvider({ children }) {
+  const { user } = useAuth();
+  const today = todayKey();
+  const [progress, setProgress] = useState(() => ensureTodaySession(loadProgress(user.id), today));
+  const [cloudReady, setCloudReady] = useState(!supabase || user.isLocal);
+
+  useEffect(() => {
+    if (!supabase || user.isLocal) return undefined;
+    let active = true;
+    supabase.from('user_progress').select('progress').eq('user_id', user.id).maybeSingle().then(({ data }) => {
+      if (!active) return;
+      if (data?.progress) setProgress(ensureTodaySession(mergeProgress(data.progress), today));
+      setCloudReady(true);
+    }).catch(() => { if (active) setCloudReady(true); });
+    return () => { active = false; };
+  }, [today, user.id, user.isLocal]);
+
+  useEffect(() => {
+    if (!cloudReady) return undefined;
+    localStorage.setItem(storageKeyFor(user.id), JSON.stringify(progress));
+    if (!supabase || user.isLocal) return undefined;
+    const timer = window.setTimeout(async () => {
+      try {
+        const { error } = await supabase.from('user_progress').upsert({ user_id: user.id, progress, updated_at: new Date().toISOString() }, { onConflict: 'user_id' });
+        if (error) throw error;
+      } catch (error) {
+        console.error('Progress save failed:', error);
+      }
+    }, 650);
+    return () => window.clearTimeout(timer);
+  }, [cloudReady, progress, user.id, user.isLocal]);
+
+  const content = useMemo(() => ({
+    kanji: applyOverride(kanji, progress.overrides.kanji, progress.custom.kanji, progress.archived.kanji),
+    vocabulary: applyOverride(vocabulary, progress.overrides.vocabulary, progress.custom.vocabulary, progress.archived.vocabulary),
+    grammar: applyOverride(grammar, progress.overrides.grammar, progress.custom.grammar, progress.archived.grammar),
+    reading: applyOverride(readings, progress.overrides.reading, progress.custom.reading, progress.archived.reading),
+  }), [progress.archived, progress.custom, progress.overrides]);
+
+  const activeLevel = progress.settings.activeLevel || 'N4';
+  const levelContent = useMemo(() => Object.fromEntries(
+    Object.entries(content).map(([area, items]) => [area, itemsForLevel(items, area, activeLevel)]),
   ), [activeLevel, content]);
   const session = progress.sessions[sessionKey(today, activeLevel)] || createSession(progress, activeLevel);
   const score = useMemo(() => calculateOverallScore(progress, content), [content, progress]);
@@ -130,3 +287,11 @@
     importProgress, replaceOfficialKanji, setCompletedKanjiDays, cloudReady,
   };
 
+  return <StudyContext.Provider value={value}>{children}</StudyContext.Provider>;
+}
+
+export const useStudy = () => {
+  const value = useContext(StudyContext);
+  if (!value) throw new Error('useStudy must be used inside StudyProvider');
+  return value;
+};
