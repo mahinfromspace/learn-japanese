@@ -133,30 +133,49 @@ export function StudyProvider({ children }) {
     return () => { active = false; };
   }, [today, user.id, user.isLocal]);
 
-  useEffect(() => {
-    if (!cloudReady) return undefined;
-    localStorage.setItem(storageKeyFor(user.id), JSON.stringify(progress));
-    if (!supabase || user.isLocal) return undefined;
-    const timer = window.setTimeout(() => {
-      supabase.from('user_progress').upsert({ user_id: user.id, progress, updated_at: new Date().toISOString() }, { onConflict: 'user_id' });
-    }, 650);
+    useEffect(() => {
+    if (!cloudReady || !supabase || user.isLocal) return undefined;
+
+    const timer = window.setTimeout(async () => {
+      try {
+        const { error } = await supabase
+          .from('user_scores')
+          .upsert(
+            {
+              user_id: user.id,
+              display_name:
+                user.user_metadata?.display_name ||
+                user.email?.split('@')[0] ||
+                'Learner',
+              overall_score: score.total,
+              active_level: activeLevel,
+              breakdown: Object.fromEntries(
+                score.sections.map((section) => [
+                  section.key,
+                  section.points,
+                ])
+              ),
+              updated_at: new Date().toISOString(),
+            },
+            { onConflict: 'user_id' }
+          );
+
+        if (error) throw error;
+      } catch (error) {
+        console.error('Score save failed:', error);
+      }
+    }, 1200);
+
     return () => window.clearTimeout(timer);
-  }, [cloudReady, progress, user.id, user.isLocal]);
-
-  const content = useMemo(() => ({
-    kanji: applyOverride(kanji, progress.overrides.kanji, progress.custom.kanji, progress.archived.kanji),
-    vocabulary: applyOverride(vocabulary, progress.overrides.vocabulary, progress.custom.vocabulary, progress.archived.vocabulary),
-    grammar: applyOverride(grammar, progress.overrides.grammar, progress.custom.grammar, progress.archived.grammar),
-    reading: applyOverride(readings, progress.overrides.reading, progress.custom.reading, progress.archived.reading),
-  }), [progress.archived, progress.custom, progress.overrides]);
-
-  const activeLevel = progress.settings.activeLevel || 'N4';
-  const levelContent = useMemo(() => Object.fromEntries(
-    Object.entries(content).map(([area, items]) => [area, itemsForLevel(items, area, activeLevel)]),
-  ), [activeLevel, content]);
-  const session = progress.sessions[sessionKey(today, activeLevel)] || createSession(progress, activeLevel);
-  const score = useMemo(() => calculateOverallScore(progress, content), [content, progress]);
-
+  }, [
+    activeLevel,
+    cloudReady,
+    score,
+    user.email,
+    user.id,
+    user.isLocal,
+    user.user_metadata,
+  ]);
   useEffect(() => {
     if (!cloudReady || !supabase || user.isLocal) return undefined;
     const timer = window.setTimeout(() => {
