@@ -1,0 +1,41 @@
+.app-shell .bottom-nav { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.tutor-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.tutor-heading h1 { max-width: 680px; }
+.tutor-level { display: inline-flex; align-items: center; gap: 8px; flex-shrink: 0; padding: 10px 14px; border-radius: 24px; color: var(--green); background: var(--green-soft); font-size: 12px; font-weight: 750; }
+.tutor-layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 24px; align-items: start; }
+.tutor-sidebar { display: grid; gap: 18px; padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
+.tutor-sidebar h2 { font-size: 18px; line-height: 1.4; }
+.tutor-modes { display: grid; gap: 8px; }
+.tutor-modes button { text-align: left; display: grid; gap: 6px; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 14px; cursor: pointer; }
+.tutor-modes button span { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.tutor-modes button.selected { border-color: var(--green); background: var(--green-soft); color: var(--green); }
+.tutor-mood { display: grid; gap: 8px; font-size: 12px; font-weight: 700; }
+.tutor-mood select { width: 100%; min-width: 0; padding: 10px; font-size: 12px; background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: 6px; }
+.tutor-note { color: var(--muted); font-size: 12px; line-height: 1.7; margin: 0; }
+.tutor-chat { min-width: 0; padding: 28px; border: 1px solid var(--line); border-radius: 12px; background: #fff; box-shadow: var(--shadow); }
+.tutor-welcome { max-width: 560px; padding: 14px 0 24px; margin: 0 auto; }
+.tutor-mark { display: inline-grid; place-items: center; background: var(--green-soft); color: var(--green); width: 46px; height: 46px; border-radius: 12px; margin-bottom: 20px; }
+.tutor-welcome h2 { font-size: clamp(23px, 4vw, 32px); line-height: 1.35; }
+.tutor-welcome > p { color: var(--muted); font-size: 14px; }
+.tutor-example { display: flex; align-items: flex-start; gap: 10px; text-align: left; width: 100%; margin-top: 20px; padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: #f4f7f5; color: var(--green); line-height: 1.7; font-size: 13px; cursor: pointer; }
+.tutor-messages { display: grid; gap: 16px; }
+.tutor-message { min-width: 0; padding: 18px 20px; border-radius: 10px; background: #f5f7f6; border: 1px solid var(--line); }
+.tutor-message.user { background: var(--green-soft); border-color: #cde1d6; margin-left: 32px; }
+.tutor-speaker { margin: 0 0 10px; color: var(--green); font-size: 11px; font-weight: 800; letter-spacing: .04em; }
+.tutor-answer p, .tutor-question { white-space: pre-wrap; margin: 10px 0; font-size: 14px; line-height: 1.9; overflow-wrap: anywhere; }
+.tutor-answer p:last-child, .tutor-question:last-child { margin-bottom: 0; }
+.tutor-answer h3 { font-size: 16px; margin: 18px 0 8px; line-height: 1.5; }
+.tutor-answer h3:first-child { margin-top: 0; }
+.tutor-answer ul { padding-left: 22px; font-size: 14px; line-height: 1.9; }
+.tutor-thinking { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--green); padding: 14px 0; }
+.tutor-form { display: grid; gap: 10px; margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); }
+.tutor-form label { font-size: 12px; font-weight: 750; }
+.tutor-form textarea { width: 100%; resize: vertical; min-height: 100px; max-height: 320px; padding: 14px; border: 1px solid #bdcec3; border-radius: 8px; background: #fff; color: var(--ink); line-height: 1.7; }
+.tutor-page button:focus-visible, .tutor-page select:focus-visible, .tutor-page textarea:focus-visible { outline: 3px solid #80b8a4; outline-offset: 3px; }
+.tutor-page button:disabled { cursor: not-allowed; opacity: .55; }
+.tutor-form-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.tutor-form-footer small, .tutor-disclosure { color: var(--muted); font-size: 11px; line-height: 1.8; }
+.tutor-disclosure { margin: 18px 0 0; }
+.tutor-error { margin: 0; padding: 12px 14px; border-radius: 7px; color: #943e2c; background: var(--red-soft); font-size: 13px; line-height: 1.7; }
+@media (max-width: 900px) { .tutor-layout { grid-template-columns: 1fr; } .tutor-modes { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tutor-heading { flex-direction: column; } }
+@media (max-width: 540px) { .tutor-chat { padding: 18px; } .tutor-sidebar { padding: 18px; } .tutor-message { padding: 14px; } .tutor-message.user { margin-left: 12px; } .bottom-nav a { font-size: 9px; } }

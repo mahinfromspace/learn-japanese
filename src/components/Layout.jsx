@@ -1,4 +1,4 @@
-import { ArrowLeft, BookOpenText, Brain, CalendarDays, Library, LogOut, Menu, Settings, Shapes, UserRound, X } from 'lucide-react';
+import { ArrowLeft, BookOpenText, Brain, CalendarDays, Library, LogOut, Menu, Settings, Shapes, Sparkles, UserRound, X } from 'lucide-react';
 import { useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../state/AuthContext';
@@ -9,6 +9,7 @@ const links = [
   { to: '/learn', label: 'Learn', icon: Shapes },
   { to: '/test', label: 'Test', icon: Brain },
   { to: '/reading', label: 'Reading', icon: BookOpenText },
+  { to: '/tutor', label: 'AI Tutor', icon: Sparkles },
   { to: '/library', label: 'Library', icon: Library },
 ];
 
